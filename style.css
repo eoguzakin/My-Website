@@ -38,6 +38,10 @@ nav{
 	font-weight: bold;
 	text-transform: capitalize;
 }
+.logo a:hover{
+	color: #ff9100;
+	transition: .4s;
+}
 span{
     color: navy;
 }
@@ -62,9 +66,12 @@ nav ul li a:hover{
 .intro{
     height: 100vh;
 	width: 100%;
+	margin: 0px;
+	padding: 0px;
 	background-size: cover;
     background-image: url(aslan.jpg);
-	background-position: center;
+	background-repeat: no-repeat;
+	background-position:center;
 }
 .content{
 	position: absolute;
@@ -72,17 +79,13 @@ nav ul li a:hover{
 	left:8%;
 	transform: translateY(-50%);
 }
-.content a:link{
-    color: seashell;
+.content a{
+    color: navy;
     text-decoration:solid;
-}
-.content a:visited{
-    color: seashell;
-    text-decoration: none;
 }
 .content a:hover{
     text-decoration: none;
-    color: navy;
+    color: seashell;
     transition: .4s;
 }
 h1{
