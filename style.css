@@ -146,7 +146,6 @@ span2{
 	font-size: 18px;
 	margin-bottom: 45px;
 }
-
 .education{
 	background: #101010;
 	width: 100%;
@@ -166,8 +165,8 @@ span2{
 	min-height: 400px;
 }
 .card{
-	height: 365px;
-	width: 335px;
+	height: fit-content;
+	width: 70%;
 	padding: 20px 35px;
 	background: #191919;
 	border-radius: 20px;
@@ -180,37 +179,23 @@ span2{
 	font-size: 50px;
 	display: block;
 	text-align: center;
-	margin: 25px 0px;
-	color: #f9004d;
+	margin: 15px 0px;
+	color: #2500f9;
 
 }
-h5{
-	color: white;
-	font-size: 23px;
-	margin-bottom: 15px;
-}
 .pra p{
-	color: #fcfc;
+	color: seashell;
 	font-size: 16px;
 	line-height: 27px;
 	margin-bottom: 25px;
 }
-.card .button{
-	background-color:#f9004d;
-	color: white;
-	text-decoration: none;
-	border: 2px solid transparent;
-	font-weight: bold;
-	padding: 9px 22px;
-	border-radius: 30px;
-	transition: .4s; 
+.pra ul li{
+    list-style-type: square;
+    color: seashell;
+    font-size: 16px;
+	line-height: 27px;
+	margin-bottom: 10px;
 }
-.card .button:hover{
-	background-color: transparent;
-	border: 2px solid #f9004d;
-	cursor: pointer;
-}
-
 .skills{
 	background: #191919;
 	width: 100%;
@@ -245,16 +230,6 @@ h5{
     .col ul{list-style-type:square; width:100%;height:100%;margin:0; padding:0;display:inline-block;}
     .col ul li{width:auto;height:fit-content; margin:0; padding:5% 5%;}
 }
- /*
- @media screen and (min-width: 900px) {  
-   html, body{margin:0}
-    #Container{width:100%;height:100px; text-align:center;}   
-    .col ul{list-style:none; width:100%;height:100%;        margin:0; padding:0;}
-    .col ul li{width:10.75%;height:100%; display:inline-block; margin:0;      padding:0;}
-    .col ul li:first-child{margin:0;float:left}
-    .col ul li:last-child{margin:0;}
-    .col ul li + .col ul li{margin-left:2%; float:right}
-   }*/
 h5{
 	color: seashell;
 	font-size: 23px;
