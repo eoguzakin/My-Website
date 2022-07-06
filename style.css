@@ -80,19 +80,6 @@ nav ul li a:hover{
 	left:8%;
 	transform: translateY(-50%);
 }
-.slide-left{
-	animation: slideleft 1s linear forwards;
-}
-@keyframes slideleft{
-	0%{
-		transform: translate(70px);
-		opacity: 0;
-	}
-	100%{
-		transform: translate(0px);
-		opacity: 1;
-	}
-}
 .content a{
     color: navy;
     text-decoration:solid;
@@ -122,17 +109,6 @@ h4{
 	width: 100%;
 	padding: 100px 0px;
 	background-color: #191919;
-}
-.appear{
-	animation: slideleft 2s linear forwards;
-}
-@keyframes appear{
-	0%{
-		opacity: 0;
-	}
-	100%{
-		opacity: 1;
-	}
 }
 .about img{
 	height: auto;
@@ -251,7 +227,7 @@ span2{
     color: seashell;
     display: inline-block;
     position: relative;
-    padding: 50px  50px;
+    padding: 25px  25px;
     max-width: 30%;
 }
 .col ul li{
