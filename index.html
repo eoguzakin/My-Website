@@ -1,6 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Oğuz Akın</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
@@ -12,12 +14,12 @@
 	<header>
 		<div class="navi">
 			<nav>
-				<h2 class="logo"><span><a href="#intro">Oğuz Akın</a></span></h2>
+				<h2 class="logo"><a href="#intro">Oğuz Akın</a></h2>
 				<ul>
-					<li class="scroll-link"><a href="#about"><i class="fas fa-user"></i> About Me</a></li>
-					<li class="scroll-link"><a href="#education"><i class="fas fa-graduation-cap"></i> Education</a></li>
-					<li class="scroll-link"><a href="#skills"><i class="fa fa-code"></i> Skills</a></li>
-					<li class="scroll-link"><a href="#contact"><i class="fa fa-envelope"></i> Contact Me</a></li>
+					<li><a href="#about"><i class="fas fa-user"></i> About Me</a></li>
+					<li><a href="#education"><i class="fas fa-graduation-cap"></i> Education</a></li>
+					<li><a href="#skills"><i class="fa fa-code"></i> Skills</a></li>
+					<li><a href="#contact"><i class="fa fa-envelope"></i> Contact</a></li>
 				</ul>
 			</nav>
 		</div>
@@ -25,86 +27,93 @@
     <div class="intro" id="intro">
 		<div class="content" data-aos="fade-left" data-aos-duration="700">
 			<h4>Hi, I'm</h4>
-			<h1><span1>Oğuz Akın</span1></h1>
-			<h3>I am a Computer Science student <a href="https://www.uni-saarland.de/en/home.html" target="_blank"><b>@Saarland University</b></a><br/>
-				I was a Computer Engineering student <a href="https://w3.bilkent.edu.tr/bilkent/" target="_blank"><b>@Bilkent University</b></a><br/>
-				I am currently a working student <a href="https://www.sap.com/germany/index.html" target="_blank"><b>@SAP</b></a>
+			<h1>Oğuz Akın</h1>
+			<h3>
+				Computer Science Student <a href="https://www.uni-saarland.de/en/home.html" target="_blank">@Saarland University</a><br/>
+				Former Computer Engineering Student <a href="https://w3.bilkent.edu.tr/bilkent/" target="_blank">@Bilkent University</a><br/>
+				Working Student <a href="https://www.sap.com/germany/index.html" target="_blank">@SAP</a>
 			</h3>
 		</div>
 	</div>
 
 	<section class="about" id="about">
 		<div class="main">
-			<img src="Profile.jpeg" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="200">
+			<div class="image-container" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="200">
+				<img src="4.jpg">
+			</div>
 			<div class="about-text" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="200">
 				<h2>About Me</h2>
-				<h5 ><span2>Programming Enthusiast</span2></h5>
-				<p>A proactive BSc Computer
-					Science student at Saarland University and is currently working at 
-					<a href="https://www.sap.com/germany/index.html" target="_blank" style="text-decoration:none;color:rgba(143, 214, 247, 0.8);">
+				<h5>Programming Enthusiast</h5>
+				<p>
+					A proactive BSc Computer Science student at Saarland University and is currently working at 
+					<a href="https://www.sap.com/germany/index.html" target="_blank" style="text-decoration:none;color:var(--orange);">
 						<b>SAP</b>
 					</a> as a working student in Translation Project Coordination. Was previously in BSc Computer Engineering at İhsan
-					Doğramacı Bilkent University. Has
-					strong academic achievement, was in
-					the High Honour Roll and the Honour Roll back in İhsan
-					Doğramacı Bilkent University, and programming
-					experience with a strong algorithm-programming
-					background. Possesses
-					strong leadership and communication
-					skills with fluency in English and medial German. Keen to
-					pursue a career in Computer Science
-					as an AI specialist, a Computational
-					Biologist or Machine Learning
-					specialist.
+					Doğramacı Bilkent University.
+				</p>
+				<p>
+					Has strong academic achievement, was in the High Honour Roll and the Honour Roll back in İhsan
+					Doğramacı Bilkent University, and programming experience with a strong algorithm-programming
+					background. Possesses strong leadership and communication skills with fluency in English and medial German.
+				</p>
+				<p>
+					Keen to pursue a career in Computer Science as an AI specialist, a Computational
+					Biologist or Machine Learning specialist.
 				</p>
 			</div>
 		</div>
 	</section>
 
 	<div class="education" id="education">
-		<div class="title" data-aos="fade-out" data-aos-duration="1000" data-aos-delay="200">
+		<div class="title" data-aos="fade-out" data-aos-duration="1000">
 			<h2>Education</h2>
 		</div>
 
 		<div class="box">
-			<div class="card" data-aos="flip-right" data-aos-duration="700" data-aos-delay="200">
+			<div class="card" data-aos="flip-right" data-aos-duration="700">
 				<img src="atakent.png"/>
-				<h5 style="color: rgb(234, 149, 11);font-size: 23px;margin-bottom: 15px;">Karşıyaka Atakent Anatolian High School<br/>
-					<span style="color:seashell;">High School Diploma</span><br/><span style="color:turquoise;">Sep 2016 - Jun 2020</span></h5>
+				<h5>Karşıyaka Atakent Anatolian High School
+					<span>High School Diploma</span>
+					<span>Sep 2016 - Jun 2020</span>
+				</h5>
 				<div class="pra">
-					<p>
-						Graduation Grade: 94,3898 out of 100<br/>A-Level Subjects: Mathematics (A), Physics (A), Chemistry (A), Biology (A), English (A), Secondary Foreign Language (German) (A)
-					</p>
+					<p>Graduation Grade: 94,3898 out of 100</p>
+					<p>A-Level Subjects: Mathematics (A), Physics (A), Chemistry (A), Biology (A), English (A), Secondary Foreign Language (German) (A)</p>
 				</div>
 			</div>
-			<div class="card" data-aos="flip-right" data-aos-duration="700" data-aos-delay="200">
+
+			<div class="card" data-aos="flip-right" data-aos-duration="700">
 				<img src="bilkent.png"/>
-				<h5 style="color: rgb(234, 149, 11);font-size: 23px;margin-bottom: 15px;">İhsan Doğramacı Bilkent University<br/>
-					<span style="color:seashell;">BSc Computer Engineering</span><br/><span style="color:turquoise;">Sep 2020 - Sep 2022</span></h5>
+				<h5>İhsan Doğramacı Bilkent University
+					<span>BSc Computer Engineering</span>
+					<span>Sep 2020 - Sep 2022</span>
+				</h5>
 				<div class="pra">
-					<p>
-						Predicted Grade: First Class Degree<br/>Major GPA: 3.73<br/>
-						Important Subjects: Algorithms and Programming I (A), Algorithms and Programming II
-						(A), Fundamental Structures of Computer Science I (A), English and
-						Composition II (A), English and Composition I (-A), Introduction to Modern
-						Biology (-A), General Physics (+B), Calculus II (B), Digital Design (B)
-					</p>
+					<p>Predicted Grade: First Class Degree</p>
+					<p>Major GPA: 3.73</p>
+					<p>Important Subjects: Algorithms and Programming I (A), Algorithms and Programming II (A), 
+					   Fundamental Structures of Computer Science I (A), English and Composition II (A), 
+					   English and Composition I (-A), Introduction to Modern Biology (-A), 
+					   General Physics (+B), Calculus II (B), Digital Design (B)</p>
 				</div>
 			</div>
-			<div class="card" data-aos="flip-right" data-aos-duration="700" data-aos-delay="200">
-				<div class ="img2"><img src="uni_uds_logo.jpg"/></div>
-				<h5 style="color: rgb(234, 149, 11);font-size: 23px;margin-bottom: 15px;">Saarland University<br/>
-					<span style="color:seashell;">BSc Computer Science</span><br/><span style="color:turquoise;">Oct 2022 - Present</span></h5>
+
+			<div class="card" data-aos="flip-right" data-aos-duration="700">
+				<div class="img2"><img src="uni_uds_logo.jpg"/></div>
+				<h5>Saarland University
+					<span>BSc Computer Science</span>
+					<span>Oct 2022 - Present</span>
+				</h5>
 				<div class="pra">
-					<p>
-						Important Subjects: Programming I, Mathematics for Computer Scientists I-II-III, 
-						Perspectives in Computer Science, Programming II, System Architecture, Introduction to Theoretical Computer Science, Fundamentals of Algorithms and Data Structures
-					</p>
+					<p>Important Subjects: Programming I, Mathematics for Computer Scientists I-II-III, 
+					   Perspectives in Computer Science, Programming II, System Architecture, 
+					   Introduction to Theoretical Computer Science, Fundamentals of Algorithms and Data Structures</p>
 				</div>
 			</div>
-			<div class="card" data-aos="flip-right" data-aos-duration="700" data-aos-delay="200">
+
+			<div class="card" data-aos="flip-right" data-aos-duration="700">
 				<i class="fa fa-trophy"></i>
-				<h5 style="color: rgb(234, 149, 11);font-size: 23px;margin-bottom: 15px;">Achievements</h5>
+				<h5>Achievements</h5>
 				<div class="pra">
 					<ul>
 						<li>Certificate of Achievement in secondary school.</li>
@@ -121,44 +130,57 @@
 	</div>
 
 	<div class="skills" id="skills">
-		<div class="title" data-aos="fade-out" data-aos-duration="1000" data-aos-delay="200">
+		<div class="title" data-aos="fade-out" data-aos-duration="1000">
 			<h2>Skills</h2>
 		</div>
 		<div class="box">
 			<div class="col">
 				<ul>
-					<li data-aos="fade-up" data-aos-duration="700" data-aos-delay="200"><b style="color:rgb(35, 212, 4)">Project management:</b> Developed a Java project with two other Bilkent CS freshmen 
-						in less than two weeks and got A in project demo in Fall 2021-2022. 
-						Demonstrated good knowledge of JavaFX and used MySQL for the database. Developed Programming 2 projects using Arch-Linux</li><br/>
-					<li data-aos="fade-up" data-aos-duration="700" data-aos-delay="200"><b style="color:rgb(35, 212, 4)">Programming:</b> Has good knowledge about algorithm designing and programming notions 
-						like object-oriented programming. Learned Java and developed the CS 102 project using it. 
-						Also completed the Programming II projects with Java; which included implementing a TicTacToe game, simple RayTracer and a C compiler for a small subset of C.
-						Made an intro to Python and adjusted previous Java learnings to it.
-						Dived into C++ with CS 201 and implemented fundamental data structures with C++. 
-						Learned C and implemented image processing and SAT Solver projects with it.
-						Worked with SystemVerilog and Verilog to implement digital circuits and MIPS processor.
-						Worked with MIPS Assembly to implement a German IBAN verifier and instructions to handle syscall errors and timer interrupts.
-						Also learned basics of HTML and CSS.</li><br/>
+					<li data-aos="fade-up" data-aos-duration="700">
+						<b>Project Management</b>
+						<p>Developed a Java project with two other Bilkent CS freshmen in less than two weeks and got A in project demo in Fall 2021-2022. 
+						   Demonstrated good knowledge of <span class="highlight-code">JavaFX</span> and used <span class="highlight-code">MySQL</span> for the database. 
+						   Developed Programming 2 projects using <span class="highlight-code">Arch-Linux</span></p>
+					</li>
+					<li data-aos="fade-up" data-aos-duration="700">
+						<b>Programming</b>
+						<p>Has good knowledge about algorithm designing and object-oriented programming. 
+						   Learned <span class="highlight-code">Java</span> and developed the CS 102 project using it. 
+						   Also completed the Programming II projects with <span class="highlight-code">Java</span>; 
+						   which included implementing a TicTacToe game, RayTracer and a C compiler for a small subset of C.
+						   Made an intro to <span class="highlight-code">Python</span> and adjusted previous <span class="highlight-code">Java</span> learnings to it.
+						   Dived into <span class="highlight-code">C++</span> with CS 201 and implemented fundamental data structures with <span class="highlight-code">C++</span>. 
+						   Learned <span class="highlight-code">C</span> and implemented image processing and SAT Solver projects with it.
+						   Worked with <span class="highlight-code">SystemVerilog</span> and <span class="highlight-code">Verilog</span> to implement digital circuits and MIPS processor.
+						   Worked with <span class="highlight-code">MIPS Assembly</span> to implement a German IBAN verifier and instructions to handle syscall errors and timer interrupts.
+						   Also learned basics of <span class="highlight-code">HTML</span> and <span class="highlight-code">CSS</span>.</p>
+					</li>
 				</ul>
 			</div>
 			<div class="col">
 				<ul>
-					<li data-aos="fade-up" data-aos-duration="700" data-aos-delay="200"><b style="color:rgb(255, 60, 0)">Leadership:</b> Was the leader of CS 102 project group. 
-						Provided directions and work distributions alongside self-contributions to the project. 
-						Whole group got A in project presentation.Also led a social studies group in
-						HIST 200, arranged meetings and conducted interviews as self-contribution.
-						The group got full points in paper presentation</li><br/>
-					<li data-aos="fade-up" data-aos-duration="700" data-aos-delay="200"><b style="color:rgb(255, 60, 0)">Research:</b> Done research about what Augmented Reality is and how it can impact the future. Paper got full points. 
-					Also, investigated the effects of Mass Tourism to determine whether it is detrimental or beneficial. 
-					Researched the notion of Transhumanism to determine its projected impacts and to get a better understanding for how programming technologies will be harmonized with everyday life.</li><br/>
+					<li data-aos="fade-up" data-aos-duration="700">
+						<b>Leadership</b>
+						<p>Was the leader of <span class="highlight-course">CS 102</span> project group. Provided directions and work distributions alongside self-contributions to the project. 
+						   Whole group got A in project presentation. Also led a social studies group in <span class="highlight-course">HIST 200</span>, arranged meetings and conducted interviews as self-contribution.
+						   The group got full points in paper presentation</p>
+					</li>
+					<li data-aos="fade-up" data-aos-duration="700">
+						<b>Research</b>
+						<p>Done research about what <span class="highlight-concept">Augmented Reality</span> is and how it can impact the future. Paper got full points. 
+						   Also, investigated the effects of <span class="highlight-concept">Mass Tourism</span> to determine whether it is detrimental or beneficial. 
+						   Researched the notion of <span class="highlight-concept">Transhumanism</span> to determine its projected impacts and to get a better understanding for how programming technologies will be harmonized with everyday life.</p>
+					</li>
 				</ul>
 			</div>
 			<div class="col">
 				<ul>
-					<li data-aos="fade-up" data-aos-duration="700" data-aos-delay="200"><b style="color:rgb(183, 0, 255)">Turkish (Native)</b></li><br/>
-					<li data-aos="fade-up" data-aos-duration="700" data-aos-delay="200"><b style="color:rgb(183, 0, 255)">English:</b> Got 8 Overall Band Score (Reading: 9, Listening: 8, Writing: 6.5, Speaking: 7.5) 
-						in IELTS Academic Test June 2022, corresponding to C1 CEFR English level.</li><br/>
-					<li data-aos="fade-up" data-aos-duration="700" data-aos-delay="200"><b style="color:rgb(183, 0, 255)">German:</b> ot 3,3,4,3 from TestDaf, corresponding to B2 CEFR German level.</li><br/>
+					<li data-aos="fade-up" data-aos-duration="700">
+						<b>Languages</b>
+						<p><span class="highlight-language">Turkish</span> (Native)<br>
+						   <span class="highlight-language">English</span>: Got 8 Overall Band Score (Reading: 9, Listening: 8, Writing: 6.5, Speaking: 7.5) in IELTS Academic Test June 2022, corresponding to C1 CEFR English level.<br>
+						   <span class="highlight-language">German</span>: Got 3,3,4,3 from TestDaf, corresponding to B2 CEFR German level.</p>
+					</li>
 				</ul>
 			</div>
 		</div>
@@ -166,11 +188,11 @@
 
 	<footer id="contact">
 		<p data-aos="fade-out" data-aos-duration="1000">Contact Me</p>
-		<p>I am only an email away!</p>
+		<p>I'm just an email away!</p>
 		<div class="social">
-			<a href="mailto:eoguzakin@hotmail.com"><i class='fa fa-envelope'></i></i></a>
-			<a href="https://www.linkedin.com/in/o%C4%9Fuz-ak%C4%B1n-18960722a/" target="_blank"><i class='fab fa-linkedin'></i></i></a>
-			<a href="https://github.com/eoguzakin"><i class="fab fa-github" target="_blank"></i></a>
+			<a href="mailto:eoguzakin@hotmail.com"><i class="fa fa-envelope"></i></a>
+			<a href="https://www.linkedin.com/in/o%C4%9Fuz-ak%C4%B1n-18960722a/" target="_blank"><i class="fab fa-linkedin"></i></a>
+			<a href="https://github.com/eoguzakin" target="_blank"><i class="fab fa-github"></i></a>
 			<a href="https://www.researchgate.net/profile/Oguz-Akin-4" target="_blank"><i class="fab fa-researchgate"></i></a>
 		</div>
 	</footer>

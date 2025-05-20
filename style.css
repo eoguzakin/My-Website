@@ -5,42 +5,65 @@
 	box-sizing: border-box;
 	scroll-behavior: smooth;
 }
+
+:root {
+    --black: #1A1B1E;
+    --navy: #1A1B1E;
+    --orange: #00D1FF;
+    --light-gray: #E4E6EB;
+    --white: #FFFFFF;
+    --dark-gray: #1A1B1E;
+    --accent: #00D1FF;
+    --section-bg: #1A1B1E;
+    --header-bg: #1A1B1E;
+    --card-bg: #1A1B1E;
+    --text-primary: #E4E6EB;
+    --text-secondary: #B0B3B8;
+    --highlight-1: #00D1FF;  /* Cyan for first column */
+    --highlight-2: #FF3366;  /* Pink for second column */
+    --highlight-3: #00FF9D;  /* Mint for third column */
+}
+
+body {
+    background-color: var(--black);
+    color: var(--text-primary);
+}
+
 header {
     position: sticky;
     top: 0;
     z-index: 1000;
+    background-color: var(--header-bg);
+    box-shadow: 0 2px 10px rgba(0, 209, 255, 0.1);
 }
 .navi{
 	height: auto;
 	width: 100%;
-	background-size: cover;
-    background-color: rgb(226, 226, 239);
-	background-position: center;
+	background-color: var(--header-bg);
 }
 
 nav{
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	padding-top: 30px;
-	padding-left: 8%;
-	padding-right: 8%;
-    padding-bottom: 2%;
+	padding: 15px 8%;
+	flex-wrap: wrap;
 }
 .logo{
-	color: navy;
 	font-size: 35px;
 	letter-spacing: 1px;
 	cursor: pointer;
+	text-align: center;
+	width: 100%;
 }
 .logo a{
-    color: navy;
+	color: var(--white);
 	text-decoration: none;
 	font-weight: bold;
 	text-transform: capitalize;
 }
 .logo a:hover{
-	color: #ff9100;
+	color: var(--accent);
 	transition: .4s;
 }
 span{
@@ -49,55 +72,81 @@ span{
 span1{
 	color: #ff9100;
 }
-nav ul li{
-	list-style-type: none;
-	display: inline-block;
-	padding: 10px  25px;
+nav ul {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 5px;
+    width: 100%;
+    margin-top: 15px;
+    padding: 0 10px;
 }
-nav ul li a{
-	color: navy;
-	text-decoration: none;
-	font-weight: bold;
-	text-transform: capitalize;
+nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 8px 12px;
+    white-space: nowrap;
+}
+nav ul li a {
+    color: var(--text-primary);
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: capitalize;
+    transition: .4s;
+    font-size: 14px;
 }
 nav ul li a:hover{
-	color: #ff9100;
-	transition: .4s;
+	color: var(--accent);
 }
 .intro{
     height: 100vh;
 	width: 100%;
-	margin: 0px;
-	padding: 0px;
+	background-image: url(6.jpg);
 	background-size: cover;
-    background-image: url(aslan.jpg);
-	background-repeat: no-repeat;
-	background-position:center;
+	background-position: 70% center;
+	position: relative;
+}
+.intro::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(26, 27, 30, 0.3));
 }
 .content{
 	position: absolute;
 	top: 50%;
 	left:8%;
 	transform: translateY(-50%);
+	z-index: 1;
+	max-width: 90%;
 }
 .content a{
-    color: navy;
-    text-decoration:solid;
-}
-.content a:hover{
+    color: var(--orange);
     text-decoration: none;
-    color: seashell;
     transition: .4s;
 }
-h1{
-	color: #ff9100;
-	margin: 20px 0px 20px;
-	font-size: 75px;
+.content a:hover{
+    color: var(--white);
 }
-h3{
-	color: #ff9100;
+.content h4 {
+    color: var(--accent);
+    letter-spacing: 2px;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.content h1 {
+    color: var(--white);
+	font-size: 75px;
+    margin: 20px 0;
+}
+.content h3 {
+    color: var(--text-primary);
 	font-size: 25px;
 	margin-bottom: 50px;
+    line-height: 1.6;
 }
 h4{
 	color: #ff9100;
@@ -107,17 +156,8 @@ h4{
 
 .about{
 	width: 100%;
-	padding: 100px 0px;
-	background-color: #191919;
-}
-.about img{
-	height: auto;
-	width: 430px;
-    border-radius: 20%;
-    padding-right: 10px;
-}
-.about-text{
-	width: 550px;
+	padding: 100px 0;
+	background-color: var(--section-bg);
 }
 .main{
 	width: 1130px;
@@ -126,15 +166,34 @@ h4{
 	display: flex;
 	align-items: center;
 	justify-content: space-around;
+	gap: 50px;
+}
+.image-container {
+    width: 430px;
+    aspect-ratio: 1/1;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+    background-color: var(--card-bg);
+}
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.about-text{
+	width: 550px;
+	max-width: 100%;
 }
 .about-text h2{
-	color: seashell;
-	font-size: 75px;
+	color: var(--white);
+	font-size: 60px;
 	text-transform: capitalize;
 	margin-bottom: 20px;
 }
 .about-text h5{
-	color: seashell;
+	color: var(--accent);
 	letter-spacing: 2px;
 	font-size: 22px;
 	margin-bottom: 25px;
@@ -144,52 +203,66 @@ span2{
     color:rgba(143, 214, 247, 0.8);
 }
 .about-text p{
-	color: seashell;
+	color: var(--text-primary);
 	letter-spacing: 1px;
 	line-height: 28px;
 	font-size: 18px;
 	margin-bottom: 45px;
+	text-align: justify;
 }
-.education{
-	background: #101010;
+.education {
+    background: var(--black);
 	width: 100%;
-	padding: 100px 0px;
+    padding: 100px 0;
 }
 .title h2{
-	color: white;
-	font-size: 75px;
-	width: 1130px;
+	color: var(--white);
+	font-size: 60px;
+	width: 100%;
 	margin: 30px auto;
 	text-align: center;
 }
-.box{
+.box {
 	display: flex;
+    flex-wrap: nowrap;
 	justify-content: center;
 	align-items: center;
-	min-height: 400px;
+    gap: 30px;
+    padding: 0 20px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
 }
-.card{
-	height: fit-content;
-	width: 70%;
-	padding: 20px 35px;
-	background: #191919;
+.card {
+    flex: 0 1 auto;
+    min-width: 300px;
+    max-width: fit-content;
+    width: auto;
+    padding: 30px;
+    background: var(--card-bg);
 	border-radius: 20px;
-	margin: 15px;
-	position: relative;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.05);
+    transition: transform 0.3s ease;
+    border: 1px solid rgba(0, 209, 255, 0.1);
 	text-align: center;
+    height: fit-content;
+}
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 30px rgba(0, 209, 255, 0.1);
+    border: 1px solid rgba(0, 209, 255, 0.2);
 }
 .card i{
 	font-size: 50px;
 	display: block;
 	text-align: center;
 	margin: 15px 0px;
-	color: #2500f9;
-
+	color: var(--orange);
 }
 .card img{
 	height: auto;
 	width: 80px;
-	padding-bottom: 10px;
+	margin-bottom: 20px;
 }
 .img2 img{
 	height: auto;
@@ -198,47 +271,72 @@ span2{
 	padding-top: 5px;
 	border-radius: 15px;
 }
-.pra p{
-	color: seashell;
-	font-size: 16px;
-	line-height: 27px;
-	margin-bottom: 25px;
+.card h5 {
+    color: var(--accent);
+    font-size: 23px;
+    margin-bottom: 15px;
 }
-.pra ul li{
-    list-style-type: square;
-    color: seashell;
+.card h5 span {
+    color: var(--text-secondary);
+    display: block;
+    font-size: 18px;
+    margin: 5px 0;
+}
+.pra p, .pra ul li {
+    color: var(--text-primary);
     font-size: 16px;
 	line-height: 27px;
-	margin-bottom: 10px;
+    margin-bottom: 15px;
+    text-align: center;
 }
 .skills{
-	background: #191919;
+	background: var(--section-bg);
 	width: 100%;
-	padding: 100px 0px;
+	padding: 100px 0;
 }
 .title h2{
-	color: seashell;
+	color: var(--white);
 	font-size: 75px;
 	width: 100%;
 	margin: 30px auto;
 	text-align: center;
 }
-.box{
+.skills .box {
     display: flex;
+    flex-wrap: wrap;
     width: 100%;
     min-height: fit-content;
     justify-content: center;
-	align-items: center;
+    align-items: flex-start;
+    gap: 30px;
 }
 .col{
-    color: seashell;
-    display: inline-block;
-    position: relative;
-    padding: 25px  25px;
-    max-width: 30%;
+	flex: 1;
+	min-width: 300px;
+	max-width: 400px;
+	padding: 25px;
 }
 .col ul li{
-    list-style-type: square;
+    list-style-type: none;
+    margin-bottom: 15px;
+    padding-left: 20px;
+    position: relative;
+    text-align: left;
+}
+.col ul li::before {
+    content: "•";
+    color: var(--accent);
+    position: absolute;
+    left: 0;
+}
+.col ul li b {
+    color: #FF9F1C;  /* Bright Orange */
+    display: block;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+.col ul li p {
+    text-align: left;
 }
 @media screen and (min-width: 550px) {  
     #Container{width: 100%; height: fit-content; text-align:center; }   
@@ -253,43 +351,352 @@ h5{
 footer{
 	position: relative;
 	width: 100%;
-	height: 300px;
-	background: #101010;
+	height: auto;
+	min-height: 300px;
+	background: var(--header-bg);
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
+	padding: 50px 0;
+	text-align: center;
+	border-top: 1px solid rgba(0, 209, 255, 0.1);
 }
 footer p:nth-child(1){
 	font-size: 30px;
-	color: seashell;
+	color: var(--white);
 	margin-bottom: 20px;
 	font-weight: bold;
 }
 footer p:nth-child(2){
-	color: seashell;
+	color: var(--text-primary);
 	font-size: 17px;
 	width: 500px;
+	max-width: 90%;
 	text-align: center;
 	line-height: 26px;
 }
 .social{
 	display: flex;
+	margin-top: 30px;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 20px;
 }
 .social a{
-	width: 45px;
-	height: 45px;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	background:  #ffffff;
-	border-radius: 50%;
-	margin: 22px 10px;
-	color: rgb(27, 8, 234);
-	text-decoration: none;
-	font-size: 20px;
+	color: var(--text-primary);
+	font-size: 24px;
+	transition: .4s;
 }
 .social a:hover{
-	transform: scale(1.3);
-	transition: .3s;
+	color: var(--accent);
+	transform: translateY(-5px);
+}
+
+@media screen and (max-width: 1200px) {
+    .main {
+        width: 95%;
+        gap: 30px;
+    }
+
+    .content h1 {
+        font-size: 60px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .main {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .image-container {
+        width: 100%;
+        max-width: 430px;
+        aspect-ratio: 1/1;
+        margin-bottom: 30px;
+    }
+
+    .about-text {
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .content h1 {
+        font-size: 50px;
+    }
+
+    .content h3 {
+        font-size: 20px;
+    }
+
+    .box {
+        flex-wrap: wrap;
+    }
+    
+    .card {
+        flex: 1 1 300px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    nav {
+        padding: 8px 5%;
+    }
+
+    .logo {
+        font-size: 26px;
+    }
+
+    nav ul {
+        margin-top: 8px;
+        gap: 4px;
+    }
+
+    nav ul li {
+        padding: 4px 8px;
+    }
+
+    nav ul li a {
+        font-size: 13px;
+    }
+
+    .content {
+        left: 5%;
+    }
+
+    .content h1 {
+        font-size: 40px;
+    }
+
+    .content h3 {
+        font-size: 18px;
+    }
+
+    .title h2 {
+        font-size: 40px;
+    }
+
+    .about-text h2 {
+        font-size: 40px;
+    }
+
+    .card {
+        min-width: 100%;
+    }
+
+    .col {
+        min-width: 100%;
+    }
+
+    .intro {
+        background-position: 65% center;
+    }
+
+    .image-container {
+        width: 100%;
+        max-width: 350px;
+        aspect-ratio: 1/1;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .content h1 {
+        font-size: 35px;
+    }
+
+    .content h3 {
+        font-size: 16px;
+    }
+
+    .content h4 {
+        font-size: 18px;
+    }
+
+    .title h2 {
+        font-size: 35px;
+    }
+
+    .about-text h2 {
+        font-size: 35px;
+    }
+
+    .about-text h5 {
+        font-size: 20px;
+    }
+
+    .card {
+        padding: 20px;
+    }
+
+    .col {
+        padding: 15px;
+    }
+
+    footer p:nth-child(1) {
+        font-size: 25px;
+    }
+
+    footer p:nth-child(2) {
+        font-size: 15px;
+    }
+
+    nav {
+        padding: 6px 4%;
+    }
+
+    .logo {
+        font-size: 22px;
+    }
+
+    nav ul {
+        margin-top: 6px;
+        gap: 2px;
+    }
+
+    nav ul li {
+        padding: 3px 6px;
+    }
+
+    nav ul li a {
+        font-size: 12px;
+    }
+
+    .intro {
+        background-position: 60% center;
+        min-height: 100vh;
+    }
+
+    .image-container {
+        width: 100%;
+        max-width: 300px;
+        aspect-ratio: 1/1;
+    }
+}
+
+/* Touch device optimizations */
+@media (hover: none) {
+    .card:hover {
+        transform: none;
+    }
+
+    .social a:hover {
+        transform: none;
+    }
+}
+
+/* Print styles */
+@media print {
+    .intro {
+        height: auto;
+        background: none;
+    }
+
+    .content {
+        position: static;
+        transform: none;
+    }
+
+    nav, footer {
+        display: none;
+    }
+}
+
+/* New styles for highlighting different types of text */
+.highlight-language {
+    color: #FF9F1C;  /* Bright Orange */
+}
+
+.highlight-code {
+    color: #2EC4B6;  /* Teal */
+}
+
+.highlight-course {
+    color: #E71D36;  /* Crimson */
+}
+
+.highlight-concept {
+    color: #FF9F1C;  /* Bright Orange */
+}
+
+/* Column-specific title colors */
+.col:nth-child(1) ul li b {
+    color: #FF9F1C;  /* Bright Orange */
+}
+
+.col:nth-child(1) .highlight-language,
+.col:nth-child(1) .highlight-code,
+.col:nth-child(1) .highlight-course,
+.col:nth-child(1) .highlight-concept {
+    color: #FF9F1C;  /* Bright Orange */
+}
+
+.col:nth-child(2) ul li b {
+    color: #2EC4B6;  /* Teal */
+}
+
+.col:nth-child(2) .highlight-language,
+.col:nth-child(2) .highlight-code,
+.col:nth-child(2) .highlight-course,
+.col:nth-child(2) .highlight-concept {
+    color: #2EC4B6;  /* Teal */
+}
+
+.col:nth-child(3) ul li b {
+    color: #E71D36;  /* Crimson */
+}
+
+.col:nth-child(3) .highlight-language,
+.col:nth-child(3) .highlight-code,
+.col:nth-child(3) .highlight-course,
+.col:nth-child(3) .highlight-concept {
+    color: #E71D36;  /* Crimson */
+}
+
+/* Remove the old highlight colors since they're now column-specific */
+.highlight-language,
+.highlight-code,
+.highlight-course,
+.highlight-concept {
+    color: inherit;  /* Will be overridden by column-specific colors */
+}
+
+/* Add specific adjustments for different aspect ratios */
+@media screen and (max-aspect-ratio: 9/16) {
+    .intro {
+        background-position: 55% center;
+    }
+}
+
+@media screen and (min-aspect-ratio: 16/9) {
+    .intro {
+        background-position: 70% center;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    nav {
+        flex-wrap: nowrap;
+    }
+
+    .logo {
+        width: auto;
+        text-align: left;
+    }
+
+    nav ul {
+        width: auto;
+        margin-top: 0;
+        justify-content: flex-end;
+        gap: 10px;
+        padding: 0;
+    }
+
+    nav ul li {
+        padding: 10px 25px;
+    }
+
+    nav ul li a {
+        font-size: 16px;
+    }
 }
