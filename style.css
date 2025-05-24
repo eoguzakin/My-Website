@@ -362,35 +362,58 @@ footer{
 	text-align: center;
 	border-top: 1px solid rgba(0, 209, 255, 0.1);
 }
-footer p:nth-child(1){
+
+.footer-content {
+    width: 100%;
+    max-width: 800px;
+    padding: 0 20px;
+}
+
+.footer-content p:first-child{
 	font-size: 30px;
 	color: var(--white);
 	margin-bottom: 20px;
 	font-weight: bold;
 }
-footer p:nth-child(2){
+
+.footer-content p:nth-child(2){
 	color: var(--text-primary);
 	font-size: 17px;
 	width: 500px;
 	max-width: 90%;
+	margin: 0 auto 20px;
 	text-align: center;
 	line-height: 26px;
 }
+
+.footer-content p:last-child {
+    color: var(--text-primary);
+    font-size: 17px;
+    margin-top: 20px;
+}
+
 .social{
 	display: flex;
-	margin-top: 30px;
+	margin: 30px 0;
 	flex-wrap: wrap;
 	justify-content: center;
 	gap: 20px;
 }
+
 .social a{
 	color: var(--text-primary);
 	font-size: 24px;
 	transition: .4s;
 }
+
 .social a:hover{
 	color: var(--accent);
 	transform: translateY(-5px);
+}
+
+#visitor-count {
+    color: var(--accent);
+    font-weight: bold;
 }
 
 @media screen and (max-width: 1200px) {
@@ -700,3 +723,5 @@ footer p:nth-child(2){
         font-size: 16px;
     }
 }
+
+/* Remove the old visitor counter styles since we're using footer's default text styling */
