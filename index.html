@@ -4,6 +4,66 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Oğuz Akın</title>
+	<!-- Firebase SDK -->
+	<script type="module">
+		// Import the functions you need from the SDKs you need
+		import { initializeApp } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-app.js";
+		import { getFirestore, doc, getDoc, setDoc, updateDoc } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore.js";
+
+		// Your web app's Firebase configuration
+		const firebaseConfig = {
+			apiKey: "AIzaSyAM0LRwAKLISACx3QYS0du6tcjtrqlXbt8",
+			authDomain: "my-website-b0f3c.firebaseapp.com",
+			projectId: "my-website-b0f3c",
+			storageBucket: "my-website-b0f3c.firebasestorage.app",
+			messagingSenderId: "1057696900708",
+			appId: "1:1057696900708:web:9610409c463bc39cdde171",
+			measurementId: "G-ZRT8YGQPWK"
+		};
+
+		// Initialize Firebase
+		try {
+			const app = initializeApp(firebaseConfig);
+			const db = getFirestore(app);
+
+			// Function to update counter
+			async function updateCounter() {
+				const counterElement = document.getElementById('visitor-count');
+				if (!counterElement) return;
+				
+				try {
+					const counterRef = doc(db, 'counters', 'visitorCount');
+					const counterDoc = await getDoc(counterRef);
+					
+					if (!counterDoc.exists()) {
+						await setDoc(counterRef, { count: 0 });
+						counterElement.textContent = '0';
+					} else {
+						const newCount = counterDoc.data().count + 1;
+						await updateDoc(counterRef, { count: newCount });
+						counterElement.textContent = newCount;
+					}
+				} catch (error) {
+					console.error('Error in counter update:', error);
+					counterElement.textContent = '?';
+					counterElement.title = 'Error: ' + error.message;
+				}
+			}
+
+			// Update counter as soon as possible
+			updateCounter();
+		} catch (error) {
+			console.error('Error initializing Firebase:', error);
+		}
+	</script>
+	<!-- Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+		gtag('config', 'G-XXXXXXXXXX');
+	</script>
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
@@ -204,7 +264,7 @@
 				<a href="https://www.researchgate.net/profile/Oguz-Akin-4" target="_blank"><i class="fab fa-researchgate"></i></a>
 			</div>
 			<p style="margin-top: 20px;">
-				<i class="fas fa-eye"></i> Visitors: <span id="visitor-count">0</span>
+				<i class="fas fa-eye"></i> Visitors: <span id="visitor-count">...</span>
 			</p>
 		</div>
 	</footer>
@@ -216,14 +276,6 @@
 			duration: 1000,
 			offset: 100,
 			delay: 0
-		});
-
-		// Visitor Counter
-		document.addEventListener('DOMContentLoaded', function() {
-			let count = localStorage.getItem('visitorCount') || 0;
-			count = parseInt(count) + 1;
-			localStorage.setItem('visitorCount', count);
-			document.getElementById('visitor-count').textContent = count;
 		});
 	</script>
 </body>
