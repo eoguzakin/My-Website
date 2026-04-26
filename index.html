@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -30,11 +31,11 @@
 			async function updateCounter() {
 				const counterElement = document.getElementById('visitor-count');
 				if (!counterElement) return;
-				
+
 				try {
 					const counterRef = doc(db, 'counters', 'visitorCount');
 					const counterDoc = await getDoc(counterRef);
-					
+
 					if (!counterDoc.exists()) {
 						await setDoc(counterRef, { count: 0 });
 						counterElement.textContent = '0';
@@ -60,16 +61,23 @@
 	<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
 	<script>
 		window.dataLayer = window.dataLayer || [];
-		function gtag(){dataLayer.push(arguments);}
+		function gtag() { dataLayer.push(arguments); }
 		gtag('js', new Date());
 		gtag('config', 'G-XXXXXXXXXX');
 	</script>
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link
+		href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+		integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+		integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 <body>
 	<header>
 		<div class="navi">
@@ -78,19 +86,24 @@
 				<ul>
 					<li><a href="#about"><i class="fas fa-user"></i> About Me</a></li>
 					<li><a href="#education"><i class="fas fa-graduation-cap"></i> Education</a></li>
+					<li><a href="#papers"><i class="fas fa-book"></i> Papers</a></li>
 					<li><a href="#skills"><i class="fa fa-code"></i> Skills</a></li>
 					<li><a href="#contact"><i class="fa fa-envelope"></i> Contact</a></li>
 				</ul>
 			</nav>
 		</div>
 	</header>
-    <div class="intro" id="intro">
+	<div class="intro" id="intro">
 		<div class="content" data-aos="fade-left" data-aos-duration="700">
 			<h4>Hi, I'm</h4>
 			<h1>Oğuz Akın</h1>
 			<h3>
-				Computer Science Student <a href="https://www.uni-saarland.de/en/home.html" target="_blank">@Saarland University</a><br/>
-				Former Computer Engineering Student <a href="https://w3.bilkent.edu.tr/bilkent/" target="_blank">@Bilkent University</a><br/>
+				MSc Data Engineering and Analytics Student <a href="https://www.tum.de/en/"
+					target="_blank">@TUM</a><br />
+				BSc Computer Science Graduate <a href="https://www.uni-saarland.de/en/home.html"
+					target="_blank">@Saarland University</a><br />
+				Former Computer Engineering Student <a href="https://w3.bilkent.edu.tr/bilkent/"
+					target="_blank">@Bilkent University</a><br />
 				Working Student <a href="https://www.sap.com/germany/index.html" target="_blank">@SAP</a>
 			</h3>
 		</div>
@@ -105,19 +118,24 @@
 				<h2>About Me</h2>
 				<h5>Programming Enthusiast</h5>
 				<p>
-					A proactive BSc Computer Science student at Saarland University and is currently working at 
-					<a href="https://www.sap.com/germany/index.html" target="_blank" style="text-decoration:none;color:var(--orange);">
+					A proactive computer scientist who graduated from BSc Computer Science at Saarland University in
+					March 2026 and started the MSc Data Engineering and Analytics program at TUM. Currently working at
+					<a href="https://www.sap.com/germany/index.html" target="_blank"
+						style="text-decoration:none;color:var(--orange);">
 						<b>SAP</b>
-					</a> as a working student in Translation Project Coordination. Was previously in BSc Computer Engineering at İhsan
+					</a> as a working student in Translation Project Coordination. Was previously in BSc Computer
+					Engineering at İhsan
 					Doğramacı Bilkent University.
 				</p>
 				<p>
 					Has strong academic achievement, was in the High Honour Roll and the Honour Roll back in İhsan
 					Doğramacı Bilkent University, and programming experience with a strong algorithm-programming
-					background. Possesses strong leadership and communication skills with fluency in English and advanced German.
+					background. Possesses strong leadership and communication skills with fluency in English and
+					advanced German.
 				</p>
 				<p>
-					Keen to pursue a career in Computer Science as an AI specialist, a Data Scientist or a Machine Learning specialist.
+					Keen to pursue a career in Computer Science as an AI specialist, a Data Scientist or a Machine
+					Learning specialist.
 				</p>
 			</div>
 		</div>
@@ -130,45 +148,59 @@
 
 		<div class="box">
 			<div class="card" data-aos="flip-right" data-aos-duration="700">
-				<img src="atakent.png"/>
+				<img src="atakent.png" />
 				<h5>Karşıyaka Atakent Anatolian High School
 					<span>High School Diploma</span>
 					<span>Sep 2016 - Jun 2020</span>
 				</h5>
 				<div class="pra">
 					<p>Graduation Grade: 94,3898 out of 100</p>
-					<p>A-Level Subjects: Mathematics (A), Physics (A), Chemistry (A), Biology (A), English (A), Secondary Foreign Language (German) (A)</p>
+					<p>A-Level Subjects: Mathematics (A), Physics (A), Chemistry (A), Biology (A), English (A),
+						Secondary Foreign Language (German) (A)</p>
 				</div>
 			</div>
 
 			<div class="card" data-aos="flip-right" data-aos-duration="700">
-				<img src="bilkent.png"/>
+				<img src="bilkent.png" />
 				<h5>İhsan Doğramacı Bilkent University
 					<span>BSc Computer Engineering</span>
 					<span>Sep 2020 - Sep 2022</span>
 				</h5>
 				<div class="pra">
 					<p>Major GPA: 3.73</p>
-					<p>Important Subjects: Algorithms and Programming I (A), Algorithms and Programming II (A), 
-					   Fundamental Structures of Computer Science I (A), English and Composition II (A), 
-					   English and Composition I (-A), Introduction to Modern Biology (-A), 
-					   General Physics (+B), Calculus II (B), Digital Design (B)</p>
+					<p>Important Subjects: Algorithms and Programming I (A), Algorithms and Programming II (A),
+						Fundamental Structures of Computer Science I (A), English and Composition II (A),
+						English and Composition I (-A), Introduction to Modern Biology (-A),
+						General Physics (+B), Calculus II (B), Digital Design (B)</p>
 				</div>
 			</div>
 
 			<div class="card" data-aos="flip-right" data-aos-duration="700">
-				<div class="img2"><img src="uni_uds_logo.jpg"/></div>
+				<div class="img2"><img src="uni_uds_logo.jpg" /></div>
 				<h5>Saarland University
 					<span>BSc Computer Science</span>
-					<span>Oct 2022 - Present</span>
+					<span>Oct 2022 - Mar 2026</span>
 				</h5>
 				<div class="pra">
-					<p>Important Subjects: Programming I, Mathematics for Computer Scientists I-II-III, 
-					   Perspectives in Computer Science, Programming II, System Architecture, 
-					   Introduction to Theoretical Computer Science, Fundamentals of Algorithms and Data Structures,
-					   Big Data Engineering, Database Systems, Elements of Machine Learning, Concurrent Programming,
-					   Data Networks, Cryptography, Machine Learning
+					<p>Important Subjects: Programming I, Mathematics for Computer Scientists I-II-III,
+						Perspectives in Computer Science, Programming II, System Architecture,
+						Introduction to Theoretical Computer Science, Fundamentals of Algorithms and Data Structures,
+						Big Data Engineering, Database Systems, Elements of Machine Learning, Concurrent Programming,
+						Data Networks, Cryptography, Machine Learning
 					</p>
+				</div>
+			</div>
+
+			<div class="card" data-aos="flip-right" data-aos-duration="700">
+				<img src="https://upload.wikimedia.org/wikipedia/commons/c/c8/Logo_of_the_Technical_University_of_Munich.svg"
+					alt="TUM logo" class="tum-logo" />
+				<h5>TUM
+					<span>MSc Data Engineering and Analytics</span>
+					<span>Mar 2026 - Present</span>
+				</h5>
+				<div class="pra">
+					<p>Currently pursuing a master's degree focused on modern data engineering systems, analytics
+						methods, and applied machine learning for large-scale, real-world data problems.</p>
 				</div>
 			</div>
 
@@ -180,9 +212,11 @@
 						<li>Certificate of Achievement in secondary school.</li>
 						<li>Honour Certificate in 10th and 11th grades.</li>
 						<li>Certificate of Outstanding Achievement in 11th and 12th grades.</li>
-						<li>Was in High Honour Roll for 2020-2021 Spring and 2021-2022 Fall semesters at İhsan Doğramacı Bilkent University.</li>
+						<li>Was in High Honour Roll for 2020-2021 Spring and 2021-2022 Fall semesters at İhsan Doğramacı
+							Bilkent University.</li>
 						<li>Was in Honour Roll for 2021-2022 Spring semester at İhsan Doğramacı Bilkent University.</li>
-						<li>Got an 8 overall band score in IELTS Academic Test, corresponding to C1 CEFR English level.</li>
+						<li>Got an 8 overall band score in IELTS Academic Test, corresponding to C1 CEFR English level.
+						</li>
 						<li>Got a 1440 SAT score within 98th percentile.</li>
 						<li>Got B2 in TestDaf German Language Proficiency Test.</li>
 					</ul>
@@ -190,6 +224,47 @@
 			</div>
 		</div>
 	</div>
+
+	<section class="about" id="papers">
+		<div class="main">
+			<div class="about-text" data-aos="fade-up" data-aos-duration="1000">
+				<h2>Papers</h2>
+				<h5>Research & Thesis</h5>
+				<ul class="papers-list">
+					<li>
+						<a href="https://github.com/eoguzakin/Robustness-of-AI-Generated-Image-Detection-Against-Localized-Inpainting-Attacks"
+							target="_blank">
+							<span class="paper-title">Robustness of AI-Generated Image Detection Against Localized
+								Inpainting Attacks</span>
+						</a>
+						<p class="paper-description">BSc thesis project focusing on adversarial robustness of
+							AI-generated image detectors under localized inpainting attacks.</p>
+					</li>
+					<li>
+						<a href="https://www.researchgate.net/profile/Oguz-Akin-4" target="_blank">
+							<span class="paper-title">Augmented Reality and Future Impact</span>
+						</a>
+						<p class="paper-description">A research paper discussing long-term social and technological
+							impact areas of augmented reality systems.</p>
+					</li>
+					<li>
+						<a href="https://www.researchgate.net/profile/Oguz-Akin-4" target="_blank">
+							<span class="paper-title">Mass Tourism: Benefits and Detrimental Effects</span>
+						</a>
+						<p class="paper-description">An analytical paper evaluating economic gains and sustainability
+							risks of mass tourism.</p>
+					</li>
+					<li>
+						<a href="https://www.researchgate.net/profile/Oguz-Akin-4" target="_blank">
+							<span class="paper-title">Transhumanism and Everyday Computing</span>
+						</a>
+						<p class="paper-description">A conceptual paper exploring how software technologies can
+							integrate with human-centric daily life in the future.</p>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</section>
 
 	<div class="skills" id="skills">
 		<div class="title" data-aos="fade-out" data-aos-duration="1000">
@@ -199,54 +274,94 @@
 			<div class="col">
 				<ul>
 					<li data-aos="fade-up" data-aos-duration="700">
-						<b>Project Management</b>
-						<p>Developed a <span class="highlight-code">Java</span> project with two other Bilkent CS freshmen in less than two weeks and got <span class="highlight-concept">A</span> in project demo in Fall 2021-2022. 
-						   Demonstrated good knowledge of <span class="highlight-code">JavaFX</span> and used <span class="highlight-code">MySQL</span> for the database. 
-						   Developed Programming 2 projects using <span class="highlight-code">Arch-Linux</span>. Developed a <span class="highlight-concept">simulation for emergency services</span> in Saarland state using <span class="highlight-code">Kotlin</span> 
-						   as part of the Software-praktikum in 2023. Also developed a simulation for garbage collection in deep waters and shorelines using <span class="highlight-code">Kotlin</span> as part of the Software-praktikum in 2024
-						   with a team of four (other teams were 6-7 people) as the <span class="highlight-concept">earliest group ever to finish the project</span> and one of the <span class="highlight-concept">first programmer to finish the individual part</span>.
-						   Implemented a <span class="highlight-concept">concert ticket booking system</span> for concurrent use using <span class="highlight-code">Rust</span> as a collaborative project with another student.</p>
+						<b>Data & ML Engineering</b>
+						<p>Hands-on experience with <span class="highlight-code">Python</span>, <span
+								class="highlight-code">SQL</span>, and <span class="highlight-code">Machine
+								Learning</span> workflows for data preparation, model experimentation, and evaluation.
+							Familiar with end-to-end data pipelines from preprocessing to analysis-ready datasets.
+							Experienced in feature preparation, model comparison, metric-driven evaluation, and
+							communicating model behavior clearly for technical and non-technical audiences.</p>
 					</li>
 					<li data-aos="fade-up" data-aos-duration="700">
 						<b>Programming</b>
-						<p>Has good knowledge about algorithm designing and object-oriented programming. 
-						   Learned <span class="highlight-code">Java</span> and developed the CS 102 project using it. 
-						   Also completed the Programming II projects with <span class="highlight-code">Java</span>; 
-						   which included implementing a <span class="highlight-concept">TicTacToe game</span>, <span class="highlight-concept">RayTracer</span> and a <span class="highlight-concept">C compiler</span> for a small subset of C.
-						   Made an intro to <span class="highlight-code">Python</span> and adjusted previous <span class="highlight-code">Java</span> learnings to it.
-						   Dived into <span class="highlight-code">C++</span> with <span class="highlight-course">CS 201</span> and implemented <span class="highlight-concept">fundamental data structures</span> with <span class="highlight-code">C++</span>. 
-						   Learned <span class="highlight-code">C</span> and implemented <span class="highlight-concept">image processing</span> and <span class="highlight-concept">SAT Solver</span> projects with it.
-						   Worked with <span class="highlight-code">SystemVerilog</span> and <span class="highlight-code">Verilog</span> to implement <span class="highlight-concept">digital circuits</span> and <span class="highlight-concept">MIPS processor</span>.
-						   Worked with <span class="highlight-code">MIPS Assembly</span> to implement a <span class="highlight-concept">German IBAN verifier</span> and <span class="highlight-concept">instructions to handle syscall errors and timer interrupts</span>.
-						   Also learned basics of <span class="highlight-code">HTML</span> and <span class="highlight-code">CSS</span>.
-						   In the Software-praktikum, worked with <span class="highlight-code">Kotlin</span> to implement <span class="highlight-concept">Dijkstra's algorithm</span> and used software design patterns.
+						<p>Strong foundations in <span class="highlight-code">Python</span>, <span
+								class="highlight-code">Java</span>, <span class="highlight-code">C/C++</span>, <span
+								class="highlight-code">Kotlin</span>, and <span class="highlight-code">Rust</span>, with
+							emphasis on algorithms, software design, concurrent programming, and performance-aware
+							implementations. Comfortable with object-oriented design, modular architecture, debugging,
+							and transforming theoretical algorithmic knowledge into robust production-style code.</p>
+					</li>
+					<li data-aos="fade-up" data-aos-duration="700">
+						<b>Database & Big Data</b>
+						<p>Academic and practical exposure to <span class="highlight-concept">Database Systems</span>,
+							<span class="highlight-concept">Big Data Engineering</span>, and analytics-focused data
+							modeling for scalable problem-solving. Knowledge of query optimization principles,
+							relational schema design, and handling large datasets for high-quality analytical outcomes.
 						</p>
 					</li>
-				</ul>
-			</div>
-			<div class="col">
-				<ul>
 					<li data-aos="fade-up" data-aos-duration="700">
-						<b>Leadership</b>
-						<p>Was the leader of <span class="highlight-course">CS 102</span> project group. Provided directions and work distributions alongside self-contributions to the project. 
-						   Whole group got A in project presentation. Also led a social studies group in <span class="highlight-course">HIST 200</span>, arranged meetings and conducted interviews as self-contribution.
-						   The group got full points in paper presentation</p>
-					</li>
-					<li data-aos="fade-up" data-aos-duration="700">
-						<b>Research</b>
-						<p>Done research about what <span class="highlight-concept">Augmented Reality</span> is and how it can impact the future. Paper got full points. 
-						   Also, investigated the effects of <span class="highlight-concept">Mass Tourism</span> to determine whether it is detrimental or beneficial. 
-						   Researched the notion of <span class="highlight-concept">Transhumanism</span> to determine its projected impacts and to get a better understanding for how programming technologies will be harmonized with everyday life.</p>
+						<b>Data Visualization & Reporting</b>
+						<p>Ability to convert raw technical findings into clear narratives by combining quantitative
+							analysis, concise summaries, and insight-oriented reporting. Experienced in presenting
+							project and research outcomes in a structured, audience-friendly format.</p>
 					</li>
 				</ul>
 			</div>
 			<div class="col">
 				<ul>
+					<li data-aos="fade-up" data-aos-duration="700">
+						<b>Thesis-Oriented Skills</b>
+						<p>Applied <span class="highlight-concept">adversarial robustness analysis</span>, <span
+								class="highlight-concept">image forensics</span>, and <span
+								class="highlight-concept">experimental evaluation</span> to study AI-generated image
+							detection under localized inpainting attacks. Built an end-to-end thesis workflow including
+							literature review, attack scenario design, controlled experiments, and comparative
+							evaluation of detector behavior under manipulative image edits.</p>
+					</li>
+					<li data-aos="fade-up" data-aos-duration="700">
+						<b>Research Workflow</b>
+						<p>Experienced in literature review, reproducible experimentation, result interpretation, and
+							concise technical writing for academic reporting. Comfortable converting technical findings
+							into clear visual and written narratives. Strong attention to methodology clarity,
+							assumption tracking, and reproducibility of key results.</p>
+					</li>
+					<li data-aos="fade-up" data-aos-duration="700">
+						<b>Software Engineering</b>
+						<p>Strong background in version control, collaborative development, code review practices, and
+							structured project delivery through academic and team-based software projects. Experienced
+							with iterative development, task decomposition, and maintaining readable, maintainable
+							codebases under deadlines.</p>
+					</li>
+					<li data-aos="fade-up" data-aos-duration="700">
+						<b>Distributed & Concurrent Systems</b>
+						<p>Course and project experience in concurrent programming and systems-level thinking, including
+							designing safe and scalable logic for multi-user or parallel execution contexts.</p>
+					</li>
+				</ul>
+			</div>
+			<div class="col">
+				<ul>
+					<li data-aos="fade-up" data-aos-duration="700">
+						<b>Leadership & Teamwork</b>
+						<p>Led and contributed to multiple academic projects, coordinating team communication, work
+							distribution, and delivery timelines while maintaining code quality. Strong collaboration
+							habits across multidisciplinary teams with a focus on ownership and accountability.</p>
+					</li>
+					<li data-aos="fade-up" data-aos-duration="700">
+						<b>Communication</b>
+						<p>Clear communicator in technical and academic settings, able to explain complex topics,
+							present findings, and document decisions in a structured way for teammates, instructors, and
+							stakeholders.</p>
+					</li>
 					<li data-aos="fade-up" data-aos-duration="700">
 						<b>Languages</b>
 						<p><span class="highlight-language">Turkish</span> (Native)<br>
-						   <span class="highlight-language">English</span>: Got 8 Overall Band Score (Reading: 9, Listening: 8, Writing: 6.5, Speaking: 7.5) in IELTS Academic Test June 2022, corresponding to C1 CEFR English level.<br>
-						   <span class="highlight-language">German</span>: Got 3,3,4,3 from TestDaf, corresponding to B2 CEFR German level.</p>
+							<span class="highlight-language">English</span>: Got 8 Overall Band Score (Reading: 9,
+							Listening: 8, Writing: 6.5, Speaking: 7.5) in IELTS Academic Test June 2022, corresponding
+							to C1 CEFR English level.<br>
+							<span class="highlight-language">German</span>: Got 3,3,4,3 from TestDaf, corresponding to
+							B2 CEFR German level.
+						</p>
 					</li>
 				</ul>
 			</div>
@@ -259,16 +374,20 @@
 			<p>I'm just an email away!</p>
 			<div class="social">
 				<a href="mailto:eoguzakin@hotmail.com"><i class="fa fa-envelope"></i></a>
-				<a href="https://www.linkedin.com/in/o%C4%9Fuz-ak%C4%B1n-18960722a/" target="_blank"><i class="fab fa-linkedin"></i></a>
+				<a href="https://www.linkedin.com/in/o%C4%9Fuz-ak%C4%B1n-18960722a/" target="_blank"><i
+						class="fab fa-linkedin"></i></a>
 				<a href="https://github.com/eoguzakin" target="_blank"><i class="fab fa-github"></i></a>
-				<a href="https://www.researchgate.net/profile/Oguz-Akin-4" target="_blank"><i class="fab fa-researchgate"></i></a>
+				<a href="https://www.researchgate.net/profile/Oguz-Akin-4" target="_blank"><i
+						class="fab fa-researchgate"></i></a>
 			</div>
 			<p style="margin-top: 20px;">
 				<i class="fas fa-eye"></i> Visitors: <span id="visitor-count">...</span>
 			</p>
 		</div>
 	</footer>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
+		integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw=="
+		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 	<script>
 		// Initialize AOS with proper settings
 		AOS.init({
@@ -279,4 +398,5 @@
 		});
 	</script>
 </body>
+
 </html>
