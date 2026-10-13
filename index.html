@@ -1,18 +1,307 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Oğuz Akın</title>
-	<!-- Firebase SDK -->
-	<script type="module">
-		// Import the functions you need from the SDKs you need
-		import { initializeApp } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-app.js";
-		import { getFirestore, doc, getDoc, setDoc, updateDoc } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore.js";
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f8f7f3">
+  <meta name="description" content="Oğuz Akın: master's student in Informatics and Data Engineering and Analytics at TUM, Saarland Computer Science graduate and SAP working student. Education, research, projects and technical skills.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Oğuz Akın | Computer Science, Data Science & AI">
+  <meta property="og:description" content="Professional profile, education, experience at SAP, AI robustness research, software projects and technical skills.">
+  <title>Oğuz Akın | Computer Science, Data Science & AI</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body class="formal-portfolio">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="wordmark" href="#intro" aria-label="Oğuz Akın, back to top">Oğuz Akın</a>
+      <button class="menu-toggle" type="button" aria-controls="nav-links" aria-expanded="false" hidden>Menu <span aria-hidden="true">+</span></button>
+      <nav id="nav-links" aria-label="Main navigation">
+        <a href="#about">About</a>
+        <a href="#education">Education</a>
+        <a href="#experience">Experience</a>
+        <a href="#work">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#papers">Papers</a>
+        <a href="#achievements">Achievements</a>
+        <a class="nav-contact" href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+  <main id="main">
+    <section class="hero wrap" id="intro" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <h1 id="hero-title">Oğuz Akın</h1>
+        <div class="professional-titles">
+          <p>M.Sc. Informatics <span>Technical University of Munich</span></p>
+          <p>M.Sc. Data Engineering and Analytics <span>Technical University of Munich</span></p>
+          <p>B.Sc. Computer Science <span>Saarland University</span></p>
+          <p>Working Student <span>SAP Learning</span></p>
+        </div>
+        <p class="hero-intro">Computer Science graduate with a background in algorithmic programming, machine learning research and software engineering. Currently enrolled in both master’s programmes at TUM and coordinating multilingual learning-content workflows at SAP.</p>
+      </div>
+      <figure class="hero-photo">
+        <div class="portrait-frame"><img src="Profile.jpeg" width="1194" height="1562" alt="Portrait of Oğuz Akın" fetchpriority="high" decoding="async"></div>
+      </figure>
+    </section>
 
-		// Your web app's Firebase configuration
-		const firebaseConfig = {
+    <section class="section wrap" id="about" aria-labelledby="about-title">
+      <div class="section-heading"><div><h2 id="about-title">About Me</h2></div></div>
+      <div class="profile-layout">
+        <div class="profile-copy">
+          <p>I am a <strong>Computer Science</strong> graduate from <strong>Saarland University</strong> and am currently enrolled in both the <strong>M.Sc. Informatics</strong> and <strong>M.Sc. Data Engineering and Analytics</strong> programmes at the <strong>Technical University of Munich</strong>. Before continuing my undergraduate studies in Germany, I studied <strong>Computer Engineering</strong> at <strong>Bilkent University</strong>, where I received <strong>High Honour and Honour recognition</strong> and was awarded a <strong>Merit Scholarship</strong>.</p>
+          <p>My academic background covers programming, algorithms and data structures, mathematics, databases, machine learning, software engineering and computer systems. My bachelor’s thesis, completed in 2026 at <strong>Saarland University</strong> in collaboration with <strong>CISPA</strong>, investigated the robustness of AI-generated image detection against localized inpainting attacks.</p>
+          <p>Alongside my studies, I work at <strong>SAP</strong> in <strong>Translation Project Coordination</strong>. This role involves coordinating stakeholders, translation workflows and external agencies, tracking delivery and checking learning content before publication.</p>
+          <p>My professional interests are AI engineering, data science and machine learning, particularly model evaluation, data processing and the development of reliable software systems.</p>
+        </div>
+        <figure class="profile-photo"><img src="1.jpg" width="2048" height="1536" alt="Oğuz Akın outdoors overlooking a historic town" loading="lazy" decoding="async"></figure>
+      </div>
+    </section>
+
+    <section class="section-tint" id="education" aria-labelledby="education-title">
+      <div class="section wrap">
+        <div class="section-heading"><div><h2 id="education-title">Education</h2></div></div>
+        <div class="education-list">
+          <article class="education-row">
+            <div class="education-aside"><a class="institution-logo institution-tum" href="https://www.tum.de/en/" target="_blank" rel="noopener noreferrer" aria-label="Visit Technical University of Munich"><img src="assets/logos/tum.svg" width="73" height="38" alt="Technical University of Munich logo" loading="lazy" decoding="async"></a><div class="education-date">Apr 2026 — Present<span>Munich, Germany</span></div></div>
+            <div class="education-content">
+              <h3>Technical University of Munich</h3>
+              <p class="degree">M.Sc. Informatics</p>
+              <p class="degree">M.Sc. Data Engineering and Analytics</p>
+              <p class="education-note">Currently enrolled in both programmes · Expected graduation: 2028</p>
+              <p class="education-note">Continuing in Informatics, with Data Engineering and Analytics enrolment planned to end in October 2026.</p>
+              <div class="coursework-grid course-block"><div><h4>Current coursework</h4><ul><li>Machine Learning</li><li>Introduction to Deep Learning (I2DL)</li><li>Fundamentals of Artificial Intelligence (FAI)</li><li>Emerging Topics in Machine Learning and AI</li><li>Robotics</li></ul></div><div><h4>Some completed coursework</h4><ul><li>Cloud-Based Data Processing</li><li>Database Systems on Modern CPU Architectures</li><li>Cognitive Systems</li></ul></div></div>
+            </div>
+          </article>
+          <article class="education-row">
+            <div class="education-aside"><a class="institution-logo institution-saarland" href="https://www.uni-saarland.de/en/home.html" target="_blank" rel="noopener noreferrer" aria-label="Visit Saarland University"><img src="assets/logos/uni_uds_logo.jpg" width="1890" height="827" alt="Saarland University logo" loading="lazy" decoding="async"></a><div class="education-date">Oct 2022 — Mar 2026<span>Saarbrücken, Germany</span></div></div>
+            <div class="education-content">
+              <h3>Saarland University</h3><p class="degree">B.Sc. Computer Science</p>
+              <p class="education-note">Bachelor’s thesis (2026): Robustness of AI-Generated Image Detection Against Localized Inpainting Attacks.</p>
+              <div class="coursework-grid course-block">
+                <div><h4>Data, machine learning & software</h4><ul><li>Big Data Engineering</li><li>Elements of Machine Learning</li><li>Database Systems</li><li>Software Engineering</li><li>Software Lab</li><li>Trustworthy Generative Machine Learning</li><li>Causethical Machine Learning 2.0</li></ul></div>
+                <div><h4>Programming, mathematics & systems</h4><ul><li>Programming I & II</li><li>Fundamentals of Algorithms and Data Structures</li><li>Mathematics for Computer Scientists I–III</li><li>Theoretical Computer Science</li><li>System Architecture</li><li>Concurrent Programming</li><li>Data Networks</li><li>Cryptography</li></ul></div>
+              </div>
+              <p class="supplementary-coursework"><strong>Additional coursework:</strong> Perspectives in Computer Science; Entrepreneurship in IT and Maths; German as a Foreign Language A1 and A2; English C1.</p>
+            </div>
+          </article>
+          <article class="education-row">
+            <div class="education-aside"><a class="institution-logo institution-bilkent" href="https://w3.bilkent.edu.tr/bilkent/" target="_blank" rel="noopener noreferrer" aria-label="Visit Bilkent University"><img src="assets/logos/bilkent.png" width="358" height="358" alt="Bilkent University logo" loading="lazy" decoding="async"></a><div class="education-date">Sep 2020 — Oct 2022<span>Ankara, Türkiye</span></div></div>
+            <div class="education-content">
+              <h3>İhsan Doğramacı Bilkent University</h3><p class="degree">Computer Engineering studies</p>
+              <p class="education-note">Continued undergraduate studies at Saarland University.</p>
+              <div class="coursework-grid course-block">
+                <div><h4>Programming & computer engineering</h4><ul><li>Algorithms and Programming I</li><li>Algorithms and Programming II</li><li>Fundamental Structures of Computer Science I</li><li>Digital Design</li></ul></div>
+                <div><h4>Mathematics, sciences & communication</h4><ul><li>Calculus I & II</li><li>Discrete and Combinatorial Mathematics</li><li>General Physics I</li><li>Introduction to Modern Biology</li><li>English and Composition I & II</li><li>Cultures, Civilizations and Ideas I</li></ul></div>
+              </div>
+            </div>
+          </article>
+          <article class="education-row">
+            <div class="education-aside"><a class="institution-logo institution-atakent" href="https://atakental.meb.k12.tr/" target="_blank" rel="noopener noreferrer" aria-label="Visit Karşıyaka Atakent Anatolian High School"><img src="assets/logos/atakent.png" width="900" height="900" alt="Karşıyaka Atakent Anatolian High School logo" loading="lazy" decoding="async"></a><div class="education-date">Sep 2016 — Jun 2020<span>İzmir, Türkiye</span></div></div>
+            <div class="education-content"><h3>Karşıyaka Atakent Anatolian High School</h3><p class="degree">High School Diploma</p><p class="education-note">Graduation grade: <strong>94.3898 / 100</strong></p><p class="supplementary-coursework"><strong>Subjects:</strong> Mathematics, Physics, Chemistry, Biology, English and German.</p></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section wrap" id="experience" aria-labelledby="experience-title">
+      <div class="section-heading"><div><h2 id="experience-title">Professional Experience</h2></div></div>
+      <div class="employment-layout">
+        <div class="employment-meta"><a class="sap-brand" href="https://www.sap.com/" target="_blank" rel="noopener noreferrer" aria-label="SAP"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 6.064 24 11.872" class="brand-icon" aria-hidden="true" focusable="false"><path d="M0 6.064v11.872h12.13L24 6.064zm3.264 2.208h.005c.863.001 1.915.245 2.676.633l-.82 1.43c-.835-.404-1.255-.442-1.73-.467-.708-.038-1.064.215-1.069.488-.007.332.669.633 1.305.838.964.306 2.19.715 2.377 1.9L7.77 8.437h2.046l2.064 5.576-.007-5.575h2.37c2.257 0 3.318.764 3.318 2.519 0 1.575-1.09 2.514-2.936 2.514h-.763l-.01 2.094-3.588-.003-.25-.908c-.37.122-.787.189-1.23.189-.456 0-.885-.071-1.263-.2l-.358.919-2 .006.09-.462c-.029.025-.057.05-.087.074-.535.43-1.208.629-2.037.644l-.213.002a5.075 5.075 0 0 1-2.581-.675l.73-1.448c.79.467 1.286.572 1.956.558.347-.007.598-.07.761-.239a.557.557 0 0 0 .156-.369c.007-.376-.53-.553-1.185-.756-.531-.164-1.135-.389-1.606-.735-.559-.41-.825-.924-.812-1.65a1.99 1.99 0 0 1 .566-1.377c.519-.537 1.357-.863 2.363-.863zm10.597 1.67v1.904h.521c.694 0 1.247-.23 1.248-.964 0-.709-.554-.94-1.248-.94zm-5.087.767l-.748 2.362c.223.085.481.133.757.133.268 0 .52-.047.742-.126l-.736-2.37z" /></svg></a><p>May 2024 — Present</p><p>St. Ingbert, Germany</p><span class="employment-type">Working Student</span></div>
+        <article class="experience-body">
+          <h3>Translation Project Coordination</h3><p class="role-name">SAP Learning Translation Management</p>
+          <p class="employment-summary">Coordinate the localization of SAP training courses into <strong>seven languages</strong>, supporting the workflow from stakeholder requests through translation, media checks and handoff for publication on SAP platforms.</p>
+          <ul class="experience-steps">
+            <li><div><h4>Request and stakeholder coordination</h4><p>Receive translation requests from the Learning organization, initiate the process and track progress across requesting stakeholders, regional SAP contacts and external agencies.</p></div></li>
+            <li><div><h4>Translation workflow management</h4><p>Use SAP’s neural machine translation tools and coordinate agency-supported translation when automated output does not meet the content’s quality requirements.</p></div></li>
+            <li><div><h4>Agency and resource coordination</h4><p>Support translation assignments that can be valued in the tens of thousands of euros. Coordinate requests with regional teams and agencies, with attention to clear requirements and appropriate use of resources.</p></div></li>
+            <li><div><h4>Media checks and publication handoff</h4><p>Check translated learning content and media, follow up on delivery and prepare content for publishing on SAP platforms.</p></div></li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="section-tint" id="work" aria-labelledby="work-title">
+      <div class="section wrap">
+        <div class="section-heading"><div><h2 id="work-title">Research & Projects</h2></div></div>
+        <article class="research-project">
+          <div class="research-copy">
+            <p class="project-kicker">Bachelor’s thesis · 2026 · Saarland University / CISPA</p>
+            <h3>Robustness of AI-Generated Image Detection Against Localized Inpainting Attacks</h3>
+            <p class="project-intro">Evaluated six detection methods across three approaches to investigate how localized image edits affect AI-generated image detection. The work covered experimental design, model inference, statistical evaluation and interpretation of detector behavior.</p>
+            <ul class="tag-list" aria-label="Thesis tools"><li>Python</li><li>PyTorch</li><li>pandas</li><li>NumPy</li><li>scikit-learn</li></ul>
+            <div class="research-links"><a class="text-link" href="https://github.com/eoguzakin/Robustness-of-AI-Generated-Image-Detection-Against-Localized-Inpainting-Attacks" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="brand-icon" viewBox="0 0 16 16" aria-hidden="true" focusable="false">
+  <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8" />
+</svg>Thesis & source code <span aria-hidden="true">↗</span></a></div>
+          </div>
+          <div class="research-visual thesis-visual">
+            <span class="micro">Localized image manipulation</span>
+            <div class="semantic-comparison">
+              <figure><a href="assets/thesis/real.jpg" target="_blank" rel="noopener noreferrer" aria-label="Open original photograph at full resolution"><img src="assets/thesis/real.jpg" width="512" height="512" alt="Original thesis sample: a man wearing a traditional hat" loading="lazy" decoding="async"></a><figcaption>Original photograph</figcaption></figure>
+              <figure><a href="assets/thesis/real_semi.png" target="_blank" rel="noopener noreferrer" aria-label="Open semantic inpainting example at full resolution"><img src="assets/thesis/real_semi.png" width="512" height="512" alt="The same photograph with a flower-patterned hat band created by semantic inpainting" loading="lazy" decoding="async"></a><figcaption>Semantic inpainting</figcaption></figure>
+            </div>
+            <p class="sample-explanation">A localized edit changes the hat band while retaining the surrounding photograph. This is one of the semantic manipulation examples examined in the thesis.</p>
+            <div class="detector-families"><div><span>Passive classifiers</span><strong>UFD · DIMD</strong></div><div><span>Training-free methods</span><strong>AEROBLADE · WaRPAD</strong></div><div><span>Proactive watermarking</span><strong>Tree-Ring · Stable Signature</strong></div></div>
+          </div>
+          <div class="research-takeaway"><span class="micro">Research findings</span><p>Robustness depended on the image source, edit type and detection approach. Strong performance on unedited images did not necessarily transfer to localized edits.</p></div>
+        </article>
+        <div class="project-methodology">
+          <div class="research-details-grid">
+            <div><span class="micro">Experimental design</span><h4>Baseline calibration & attack scenarios</h4><p>Established baselines with 200 real and 200 synthetic images per baseline evaluation. Kept decision thresholds fixed during attack testing and compared localized edits produced with LaMa and ZITS, including different mask sizes and shapes.</p></div>
+            <div><span class="micro">Model evaluation</span><h4>Metrics & statistical analysis</h4><p>Used Python and PyTorch for inference and pandas, NumPy and scikit-learn for analysis. Compared ROC-AUC, accuracy and attack success rates, with confidence intervals to quantify uncertainty.</p></div>
+            <div><span class="micro">Research outputs</span><h4>Reproducibility & interpretation</h4><p>Published the code and thesis on GitHub and curated datasets on Hugging Face. Analyzed differences between edited real photographs and modified synthetic images, including the behavior of watermark-based methods.</p></div>
+          </div>
+          <a class="text-link dataset-link" href="https://huggingface.co/eoguzakin" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="brand-icon" aria-hidden="true" focusable="false"><path d="M12.025 1.13c-5.77 0-10.449 4.647-10.449 10.378 0 1.112.178 2.181.503 3.185.064-.222.203-.444.416-.577a.96.96 0 0 1 .524-.15c.293 0 .584.124.84.284.278.173.48.408.71.694.226.282.458.611.684.951v-.014c.017-.324.106-.622.264-.874s.403-.487.762-.543c.3-.047.596.06.787.203s.31.313.4.467c.15.257.212.468.233.542.01.026.653 1.552 1.657 2.54.616.605 1.01 1.223 1.082 1.912.055.537-.096 1.059-.38 1.572.637.121 1.294.187 1.967.187.657 0 1.298-.063 1.921-.178-.287-.517-.44-1.041-.384-1.581.07-.69.465-1.307 1.081-1.913 1.004-.987 1.647-2.513 1.657-2.539.021-.074.083-.285.233-.542.09-.154.208-.323.4-.467a1.08 1.08 0 0 1 .787-.203c.359.056.604.29.762.543s.247.55.265.874v.015c.225-.34.457-.67.683-.952.23-.286.432-.52.71-.694.257-.16.547-.284.84-.285a.97.97 0 0 1 .524.151c.228.143.373.388.43.625l.006.04a10.3 10.3 0 0 0 .534-3.273c0-5.731-4.678-10.378-10.449-10.378M8.327 6.583a1.5 1.5 0 0 1 .713.174 1.487 1.487 0 0 1 .617 2.013c-.183.343-.762-.214-1.102-.094-.38.134-.532.914-.917.71a1.487 1.487 0 0 1 .69-2.803m7.486 0a1.487 1.487 0 0 1 .689 2.803c-.385.204-.536-.576-.916-.71-.34-.12-.92.437-1.103.094a1.487 1.487 0 0 1 .617-2.013 1.5 1.5 0 0 1 .713-.174m-10.68 1.55a.96.96 0 1 1 0 1.921.96.96 0 0 1 0-1.92m13.838 0a.96.96 0 1 1 0 1.92.96.96 0 0 1 0-1.92M8.489 11.458c.588.01 1.965 1.157 3.572 1.164 1.607-.007 2.984-1.155 3.572-1.164.196-.003.305.12.305.454 0 .886-.424 2.328-1.563 3.202-.22-.756-1.396-1.366-1.63-1.32q-.011.001-.02.006l-.044.026-.01.008-.03.024q-.018.017-.035.036l-.032.04a1 1 0 0 0-.058.09l-.014.025q-.049.088-.11.19a1 1 0 0 1-.083.116 1.2 1.2 0 0 1-.173.18q-.035.029-.075.058a1.3 1.3 0 0 1-.251-.243 1 1 0 0 1-.076-.107c-.124-.193-.177-.363-.337-.444-.034-.016-.104-.008-.2.022q-.094.03-.216.087-.06.028-.125.063l-.13.074q-.067.04-.136.086a3 3 0 0 0-.135.096 3 3 0 0 0-.26.219 2 2 0 0 0-.12.121 2 2 0 0 0-.106.128l-.002.002a2 2 0 0 0-.09.132l-.001.001a1.2 1.2 0 0 0-.105.212q-.013.036-.024.073c-1.139-.875-1.563-2.317-1.563-3.203 0-.334.109-.457.305-.454m.836 10.354c.824-1.19.766-2.082-.365-3.194-1.13-1.112-1.789-2.738-1.789-2.738s-.246-.945-.806-.858-.97 1.499.202 2.362c1.173.864-.233 1.45-.685.64-.45-.812-1.683-2.896-2.322-3.295s-1.089-.175-.938.647 2.822 2.813 2.562 3.244-1.176-.506-1.176-.506-2.866-2.567-3.49-1.898.473 1.23 2.037 2.16c1.564.932 1.686 1.178 1.464 1.53s-3.675-2.511-4-1.297c-.323 1.214 3.524 1.567 3.287 2.405-.238.839-2.71-1.587-3.216-.642-.506.946 3.49 2.056 3.522 2.064 1.29.33 4.568 1.028 5.713-.624m5.349 0c-.824-1.19-.766-2.082.365-3.194 1.13-1.112 1.789-2.738 1.789-2.738s.246-.945.806-.858.97 1.499-.202 2.362c-1.173.864.233 1.45.685.64.451-.812 1.683-2.896 2.322-3.295s1.089-.175.938.647-2.822 2.813-2.562 3.244 1.176-.506 1.176-.506 2.866-2.567 3.49-1.898-.473 1.23-2.037 2.16c-1.564.932-1.686 1.178-1.464 1.53s3.675-2.511 4-1.297c.323 1.214-3.524 1.567-3.287 2.405.238.839 2.71-1.587 3.216-.642.506.946-3.49 2.056-3.522 2.064-1.29.33-4.568 1.028-5.713-.624" /></svg>Hugging Face profile & datasets <span aria-hidden="true">↗</span></a>
+        </div>
+        <section class="experiment-gallery" id="experimental-examples" aria-labelledby="experiment-title">
+          <div class="experiment-heading"><div><span class="micro">Thesis image samples</span><h3 id="experiment-title">Experimental Examples</h3><p>Compare original images with localized edits produced using LaMa and ZITS.</p></div></div>
+          <fieldset class="sample-selector" hidden><legend>Image source</legend><div class="sample-options">
+            <label class="sample-option"><input type="radio" name="experiment-source" value="fake" aria-controls="experiment-grid" checked><span class="sample-card"><img src="assets/thesis/fake.png" width="512" height="512" alt="" loading="lazy"><span><strong>AI-generated</strong><small>Original sample</small></span><span class="sample-indicator" aria-hidden="true"></span></span></label>
+            <label class="sample-option"><input type="radio" name="experiment-source" value="real" aria-controls="experiment-grid"><span class="sample-card"><img src="assets/thesis/real.jpg" width="512" height="512" alt="" loading="lazy"><span><strong>Real photograph</strong><small>Original sample</small></span><span class="sample-indicator" aria-hidden="true"></span></span></label>
+            <label class="sample-option"><input type="radio" name="experiment-source" value="treering" aria-controls="experiment-grid"><span class="sample-card"><img src="assets/thesis/treering.png" width="512" height="512" alt="" loading="lazy"><span><strong>Tree-Ring</strong><small>Watermarked sample</small></span><span class="sample-indicator" aria-hidden="true"></span></span></label>
+            <label class="sample-option"><input type="radio" name="experiment-source" value="stablesig" aria-controls="experiment-grid"><span class="sample-card"><img src="assets/thesis/stablesig.png" width="512" height="512" alt="" loading="lazy"><span><strong>Stable Signature</strong><small>Watermarked sample</small></span><span class="sample-indicator" aria-hidden="true"></span></span></label>
+          </div></fieldset>
+          <p class="sample-description" id="sample-description" aria-live="polite">AI-generated sample: a dog on a lawn, before and after localized inpainting.</p>
+          <div class="experiment-grid" id="experiment-grid">
+            <figure data-variant="original"><a href="assets/thesis/fake.png" target="_blank" rel="noopener noreferrer" aria-label="Open original AI-generated sample at full resolution"><img src="assets/thesis/fake.png" width="512" height="512" alt="Original AI-generated image of a dog on a lawn" loading="lazy" decoding="async"></a><figcaption><strong>Original</strong><span>Before localized editing</span></figcaption></figure>
+            <figure data-variant="lama"><a href="assets/thesis/fake_lama.png" target="_blank" rel="noopener noreferrer" aria-label="Open LaMa edited AI-generated sample at full resolution"><img src="assets/thesis/fake_lama.png" width="512" height="512" alt="AI-generated dog image after localized inpainting with LaMa" loading="lazy" decoding="async"></a><figcaption><strong>LaMa</strong><span>After localized inpainting</span></figcaption></figure>
+            <figure data-variant="zits"><a href="assets/thesis/fake_zits.png" target="_blank" rel="noopener noreferrer" aria-label="Open ZITS edited AI-generated sample at full resolution"><img src="assets/thesis/fake_zits.png" width="512" height="512" alt="AI-generated dog image after localized inpainting with ZITS" loading="lazy" decoding="async"></a><figcaption><strong>ZITS</strong><span>After localized inpainting</span></figcaption></figure>
+          </div>
+          <p class="gallery-note">Qualitative examples from the thesis experiments. Detector scores and aggregate results are documented in the thesis. Select an image to view it at full resolution.</p>
+        </section>
+        <article class="software-project" id="software-project">
+          <div class="software-copy"><p class="project-kicker">Team software engineering lab · Aug–Oct 2024</p><h3>Ocean Cleanup Simulation — Save the Saardines</h3><p>Developed an ocean-cleanup simulation as part of a team software engineering project. The application models ships, resource constraints and dynamic events in a changing environment.</p><ul class="project-contributions"><li>Modular Kotlin application design and scenario parsing.</li><li>Shortest-path computation and simulation of resource-constrained cleanup operations.</li><li>Collaborative development using Git and a Java 17 / Gradle toolchain.</li><li>Unit, integration and system testing with JUnit, supported by detekt for static analysis.</li></ul></div>
+          <div class="software-tools"><span class="micro">Tools & technologies</span><ul class="tag-list"><li>Kotlin</li><li>Java 17</li><li>Gradle</li><li>JUnit</li><li>Git</li><li>detekt</li></ul><span class="project-type">Team project · Software engineering</span></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section wrap" id="skills" aria-labelledby="skills-title"><div class="section-heading"><h2 id="skills-title">Skills</h2></div>
+<div class="language-toolbox"><h3>Programming Languages</h3><ul class="capability-tools"><li>Python</li><li>Java</li><li>Kotlin</li><li>C / C++</li><li>Rust</li><li>SQL</li></ul></div>
+<div class="featured-capabilities">
+<article class="featured-capability capability-tone-0"><h3>Machine Learning & AI Evaluation</h3><p class="capability-intro">Designing controlled experiments to understand how machine learning systems behave under changing conditions.</p><dl class="capability-points">
+<div><dt>Model inference</dt><dd>Run pretrained detection models with PyTorch and prepare image inputs for method-specific evaluation.</dd></div>
+<div><dt>Robustness analysis</dt><dd>Compare passive classifiers, training-free detectors and watermarking methods under localized inpainting attacks.</dd></div>
+<div><dt>Experimental controls</dt><dd>Separate baseline calibration from attack evaluation, keep thresholds fixed and compare image sources, mask sizes and edit types.</dd></div>
+</dl><ul class="capability-tools"><li>PyTorch</li><li>Python</li><li>AI-generated image detection</li><li>LaMa</li><li>ZITS</li></ul><a class="capability-evidence" href="#work">Applied in my bachelor’s thesis<span aria-hidden="true">↗</span></a></article>
+<article class="featured-capability capability-tone-1"><h3>Software Engineering & Testing</h3><p class="capability-intro">Building modular applications and verifying how individual components and complete systems work together.</p><dl class="capability-points">
+<div><dt>Application development</dt><dd>Develop Kotlin application components, parse scenarios and model resource-constrained simulation behavior.</dd></div>
+<div><dt>Algorithmic implementation</dt><dd>Apply shortest-path computation and structured problem solving to dynamic simulation environments.</dd></div>
+<div><dt>Quality &amp; collaboration</dt><dd>Use Git, a Java 17 / Gradle toolchain, JUnit tests and detekt static analysis in collaborative development.</dd></div>
+</dl><ul class="capability-tools"><li>Kotlin</li><li>Java</li><li>Git</li><li>Gradle</li><li>JUnit</li><li>detekt</li></ul><a class="capability-evidence" href="#software-project">Applied in the Ocean Cleanup Simulation<span aria-hidden="true">↗</span></a></article>
+</div><div class="capability-grid">
+<article class="capability-card"><p class="capability-context">Research experience</p><h3>Data Analysis &amp; Statistics</h3><p class="capability-intro">Turn experimental outputs into structured comparisons and interpretable results.</p><dl class="capability-points">
+<div><dt>Data preparation</dt><dd>Organize per-image results and numerical data with pandas and NumPy.</dd></div>
+<div><dt>Evaluation metrics</dt><dd>Analyze ROC-AUC, accuracy, attack success rates and confidence intervals.</dd></div>
+<div><dt>Reporting</dt><dd>Present comparisons through tables, plots and written interpretation of uncertainty.</dd></div>
+</dl><ul class="capability-tools"><li>pandas</li><li>NumPy</li><li>scikit-learn</li><li>Statistical evaluation</li></ul></article>
+<article class="capability-card"><p class="capability-context">Projects &amp; academic foundations</p><h3>Programming &amp; Algorithms</h3><p class="capability-intro">A programming background across application, scripting and systems-oriented languages.</p><dl class="capability-points">
+<div><dt>Core concepts</dt><dd>Object-oriented programming, modular design, data structures and debugging.</dd></div>
+<div><dt>Problem solving</dt><dd>Algorithm design, graph-based reasoning and shortest-path computation.</dd></div>
+<div><dt>Mathematical foundations</dt><dd>Calculus, discrete mathematics and mathematics for computer scientists.</dd></div>
+</dl><ul class="capability-tools"><li>Python</li><li>Java</li><li>Kotlin</li><li>C / C++</li><li>Rust</li></ul></article>
+<article class="capability-card"><p class="capability-context">Completed coursework</p><h3>Databases &amp; Data Processing</h3><p class="capability-intro">Academic foundations in database design, querying and the processing of large datasets.</p><dl class="capability-points">
+<div><dt>Relational data</dt><dd>SQL, relational modelling and the principles of query optimization.</dd></div>
+<div><dt>Database performance</dt><dd>Query execution and the relationship between modern CPU architectures and database systems.</dd></div>
+<div><dt>Large-scale processing</dt><dd>Big Data Engineering and Cloud-Based Data Processing coursework.</dd></div>
+</dl><ul class="capability-tools"><li>SQL</li><li>Data modelling</li><li>Query optimization</li><li>Cloud data processing</li></ul></article>
+<article class="capability-card"><p class="capability-context">Completed coursework</p><h3>Computer Systems &amp; Concurrency</h3><p class="capability-intro">Understanding how software interacts with hardware, parallel execution and networked systems.</p><dl class="capability-points">
+<div><dt>Concurrent programming</dt><dd>Synchronization and the coordination of parallel execution.</dd></div>
+<div><dt>Systems foundations</dt><dd>Computer architecture, system organization and performance considerations.</dd></div>
+<div><dt>Networks &amp; security</dt><dd>Academic study of data networks and cryptography.</dd></div>
+</dl><ul class="capability-tools"><li>Concurrency</li><li>Synchronization</li><li>Computer architecture</li><li>Networking</li></ul></article>
+<article class="capability-card"><p class="capability-context">Academic foundations</p><h3>Digital Design &amp; Hardware Languages</h3><p class="capability-intro">A foundation in digital systems developed through computer engineering studies.</p><dl class="capability-points">
+<div><dt>Hardware description</dt><dd>Background in Verilog and SystemVerilog for describing digital logic.</dd></div>
+<div><dt>Digital systems</dt><dd>Digital Design coursework and the connection between circuit behavior and computer architecture.</dd></div>
+<div><dt>Software–hardware perspective</dt><dd>Reason about implementation choices across different levels of a computing system.</dd></div>
+</dl><ul class="capability-tools"><li>Verilog</li><li>SystemVerilog</li><li>Digital logic</li><li>Digital Design</li></ul></article>
+<article class="capability-card"><p class="capability-context">Current study at TUM</p><h3>Deep Learning, AI &amp; Robotics</h3><p class="capability-intro">Extending my machine learning background through current master’s coursework.</p><dl class="capability-points">
+<div><dt>Learning methods</dt><dd>Machine Learning and Introduction to Deep Learning (I2DL).</dd></div>
+<div><dt>Artificial intelligence</dt><dd>Fundamentals of Artificial Intelligence and Emerging Topics in Machine Learning and AI.</dd></div>
+<div><dt>Intelligent systems</dt><dd>Current Robotics coursework, building on completed Cognitive Systems studies.</dd></div>
+</dl><ul class="capability-tools"><li>Machine learning</li><li>Deep learning</li><li>AI foundations</li><li>Robotics</li></ul></article>
+<article class="capability-card"><p class="capability-context">Thesis &amp; academic writing</p><h3>Research &amp; Scientific Communication</h3><p class="capability-intro">Connect technical questions, literature, experiments and clearly documented conclusions.</p><dl class="capability-points">
+<div><dt>Research design</dt><dd>Literature review, research-question formulation and controlled comparisons.</dd></div>
+<div><dt>Reproducibility</dt><dd>Document evaluation settings, organize research code and curate datasets for sharing.</dd></div>
+<div><dt>Communication</dt><dd>Write technical reports, synthesize sources and explain findings with their limitations.</dd></div>
+</dl><ul class="capability-tools"><li>Experimental design</li><li>Literature review</li><li>GitHub</li><li>Hugging Face</li><li>Technical writing</li></ul></article>
+<article class="capability-card"><p class="capability-context">Professional experience at SAP</p><h3>Project Coordination &amp; Collaboration</h3><p class="capability-intro">Coordinate people, requirements and delivery across multilingual learning-content workflows.</p><dl class="capability-points">
+<div><dt>Stakeholders &amp; agencies</dt><dd>Communicate with the Learning organization, regional SAP teams and translation agencies.</dd></div>
+<div><dt>Delivery management</dt><dd>Initiate translation requests, track progress and follow up on requirements and resources.</dd></div>
+<div><dt>Quality &amp; teamwork</dt><dd>Perform media checks, prepare publishing handoffs and support shared deadlines.</dd></div>
+</dl><ul class="capability-tools"><li>Stakeholder communication</li><li>Planning</li><li>Quality checks</li><li>Teamwork</li></ul></article>
+</div></section>
+
+    <section class="section-tint" id="papers" aria-labelledby="papers-title"><div class="section wrap"><div class="section-heading"><h2 id="papers-title">Papers</h2></div><div class="publication-list">
+<article class="publication"><div class="publication-heading"><h3><a href="https://www.researchgate.net/publication/361681751_What_is_Augmented_Reality" target="_blank" rel="noopener noreferrer">What is Augmented Reality?<span class="publication-arrow" aria-hidden="true">↗</span></a></h3><p class="publication-date">March 2021</p></div><p class="publication-description">An examination of what distinguishes augmented reality from other digital technologies, how its scene generation, tracking and display components work, and where it can be applied. The paper considers uses in education, medicine, engineering, manufacturing and entertainment, alongside questions of social acceptance. It also discusses technical limitations, including display constraints, delays and registration errors, and argues that AR is likely to become an enduring part of everyday life.</p></article>
+<article class="publication"><div class="publication-heading"><h3><a href="https://www.researchgate.net/publication/361681711_Where_Our_Society_Is_Heading_Utopia_or_Dystopia" target="_blank" rel="noopener noreferrer">Where Our Society Is Heading, Utopia or Dystopia?<span class="publication-arrow" aria-hidden="true">↗</span></a></h3><p class="publication-date">April 2021</p></div><p class="publication-description">A critical discussion of whether transhumanism could move society toward a utopian or dystopian future. The paper examines uncertain long-term consequences, dependence on embedded technologies, unequal access to enhancement and pressure on individuals to remain competitive. Drawing on ethical, social and moral arguments, it concludes that these risks could deepen inequality and undermine autonomy unless enhancement technologies are carefully tested and controlled.</p></article>
+<article class="publication"><div class="publication-heading"><h3><a href="https://www.researchgate.net/publication/361682123_Embracing_Human_Enhancement_from_Different_Aspects" target="_blank" rel="noopener noreferrer">Embracing Human Enhancement from Different Aspects<span class="publication-arrow" aria-hidden="true">↗</span></a></h3><p class="publication-date">March 2021</p></div><p class="publication-description">An analysis of human enhancement from individual, social, political and economic perspectives. The paper weighs potential improvements in physical and cognitive capabilities against concerns about fairness, access, changing definitions of human nature and commercial transparency. It argues in favor of embracing enhancement for its potential benefits, while recognizing that unequal availability and the marketing of these technologies raise questions that require attention.</p></article>
+<article class="publication"><div class="publication-heading"><h3><a href="https://www.researchgate.net/publication/361681402_Adverse_Effects_of_Mass_Tourism" target="_blank" rel="noopener noreferrer">Adverse Effects of Mass Tourism<span class="publication-arrow" aria-hidden="true">↗</span></a></h3><p class="publication-date">December 2021</p></div><p class="publication-description">An assessment of whether the economic benefits of mass tourism outweigh its costs to host communities. The paper examines the commercialization of local culture, environmental degradation, pressure on natural resources and economic leakage. It also considers the argument that tourism creates employment, while questioning the consequences of dependence on wage labor and tourism income. Its conclusion is that these cultural, environmental and economic harms outweigh the benefits examined.</p></article>
+<article class="publication"><div class="publication-heading"><h3><a href="https://www.researchgate.net/publication/361681818_Towards_Being_An_Ethical_Tourist" target="_blank" rel="noopener noreferrer">Towards Being An Ethical Tourist<span class="publication-arrow" aria-hidden="true">↗</span></a></h3><p class="publication-date">November 2021</p></div><p class="publication-description">An exploration of how travelers can make more responsible choices, comparing perspectives from tourists and host communities in the cited literature. The paper considers environmental impacts, wildlife treatment, respect for local customs and support for local businesses. It challenges the claim that ethical tourism is impossible and argues that informed decisions, cultural awareness and attention to local economic wellbeing can make travel more considerate of its hosts.</p></article>
+</div></div></section>
+
+    <section class="section wrap" id="achievements" aria-labelledby="achievements-title">
+      <div class="section-heading"><h2 id="achievements-title">Achievements & Certifications</h2></div>
+      <div class="recognition-layout">
+        <article class="bilkent-recognition">
+          <div class="recognition-institution"><a class="award-logo" href="https://w3.bilkent.edu.tr/bilkent/" target="_blank" rel="noopener noreferrer" aria-label="Visit Bilkent University"><img src="assets/logos/bilkent.png" width="358" height="358" alt="Bilkent University logo" loading="lazy"></a><div><h3>Bilkent University</h3></div></div>
+          <div class="bilkent-awards"><div><h4>Merit Scholarship</h4><p class="award-period">2022–2023 academic year</p><p>Awarded in recognition of academic achievement during my Computer Engineering studies.</p></div><div><h4>High Honour & Honour Roll</h4><p class="award-period">Spring 2021 · Fall 2021 · Spring 2022</p><p>High Honour in Spring and Fall 2021, followed by Honour recognition in Spring 2022.</p></div></div>
+        </article>
+        <article class="school-recognition"><div><h3>Academic Distinctions</h3><p>Recognition throughout secondary and high school education.</p></div><ul><li>Certificate of Achievement in secondary school</li><li>Honour Certificates in grades 10 and 11</li><li>Certificates of Outstanding Achievement in grades 11 and 12</li></ul></article>
+      </div>
+      <div class="qualification-grid" aria-label="Test scores and language qualifications">
+        <article class="qualification"><p class="qualification-name">SAT</p><div class="qualification-result">1440<span>/ 1600</span></div><p class="qualification-description">Standardized admissions test</p></article>
+        <article class="qualification"><p class="qualification-name">IELTS Academic</p><div class="qualification-result">8.0<span>/ 9.0</span></div><p class="qualification-description"><strong>English · CEFR C1</strong><br>Overall band score · June 2022</p></article>
+        <article class="qualification"><p class="qualification-name">TestDaF</p><div class="qualification-result">B2</div><p class="qualification-description">German language proficiency</p></article>
+      </div>
+    </section>
+  </main>
+  <footer id="contact" aria-labelledby="contact-title"><div class="wrap contact-panel"><div class="contact-heading"><h2 id="contact-title">Contact</h2><div class="visitor" data-state="loading" title="Total page visits, not unique visitors."><svg class="visit-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12Z"/><circle cx="12" cy="12" r="3"/></svg><span>Visitor count</span><span id="visitor-count" role="status" aria-live="polite">…</span></div></div><div class="contact-profiles">
+<a class="contact-profile contact-mail" href="mailto:eoguzakin@hotmail.com" title="eoguzakin@hotmail.com" aria-label="eoguzakin@hotmail.com"><span class="contact-logo"><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="brand-icon" viewBox="0 0 16 16" aria-hidden="true" focusable="false">
+  <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z" />
+</svg></span><span>Email</span></a>
+<a class="contact-profile contact-linkedin" href="https://www.linkedin.com/in/oguz-akin/" title="LinkedIn profile" aria-label="LinkedIn profile" target="_blank" rel="noopener noreferrer"><span class="contact-logo"><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="brand-icon" viewBox="0 0 16 16" aria-hidden="true" focusable="false">
+  <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z" />
+</svg></span><span>LinkedIn</span></a>
+<a class="contact-profile contact-github" href="https://github.com/eoguzakin" title="GitHub profile" aria-label="GitHub profile" target="_blank" rel="noopener noreferrer"><span class="contact-logo"><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="brand-icon" viewBox="0 0 16 16" aria-hidden="true" focusable="false">
+  <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8" />
+</svg></span><span>GitHub</span></a>
+<a class="contact-profile contact-researchgate" href="https://www.researchgate.net/profile/Oguz-Akin-4" title="ResearchGate profile" aria-label="ResearchGate profile" target="_blank" rel="noopener noreferrer"><span class="contact-logo"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="brand-icon" aria-hidden="true" focusable="false"><path d="M19.586 0c-.818 0-1.508.19-2.073.565-.563.377-.97.936-1.213 1.68a3.193 3.193 0 0 0-.112.437 8.365 8.365 0 0 0-.078.53 9 9 0 0 0-.05.727c-.01.282-.013.621-.013 1.016a31.121 31.123 0 0 0 .014 1.017 9 9 0 0 0 .05.727 7.946 7.946 0 0 0 .077.53h-.005a3.334 3.334 0 0 0 .113.438c.245.743.65 1.303 1.214 1.68.565.376 1.256.564 2.075.564.8 0 1.536-.213 2.105-.603.57-.39.94-.916 1.175-1.65.076-.235.135-.558.177-.93a10.9 10.9 0 0 0 .043-1.207v-.82c0-.095-.047-.142-.14-.142h-3.064c-.094 0-.14.047-.14.141v.956c0 .094.046.14.14.14h1.666c.056 0 .084.03.084.086 0 .36 0 .62-.036.865-.038.244-.1.447-.147.606-.108.385-.348.664-.638.876-.29.212-.738.35-1.227.35-.545 0-.901-.15-1.21-.353-.306-.203-.517-.454-.67-.915a3.136 3.136 0 0 1-.147-.762 17.366 17.367 0 0 1-.034-.656c-.01-.26-.014-.572-.014-.939a26.401 26.403 0 0 1 .014-.938 15.821 15.822 0 0 1 .035-.656 3.19 3.19 0 0 1 .148-.76 1.89 1.89 0 0 1 .742-1.01c.344-.244.593-.352 1.137-.352.508 0 .815.096 1.144.303.33.207.528.492.764.925.047.094.111.118.198.07l1.044-.43c.075-.048.09-.115.042-.199a3.549 3.549 0 0 0-.466-.742 3 3 0 0 0-.679-.607 3.313 3.313 0 0 0-.903-.41A4.068 4.068 0 0 0 19.586 0zM8.217 5.836c-1.69 0-3.036.086-4.297.086-1.146 0-2.291 0-3.007-.029v.831l1.088.2c.744.144 1.174.488 1.174 2.264v11.288c0 1.777-.43 2.12-1.174 2.263l-1.088.2v.832c.773-.029 2.12-.086 3.465-.086 1.29 0 2.951.057 3.667.086v-.831l-1.49-.2c-.773-.115-1.174-.487-1.174-2.264v-4.784c.688.057 1.29.057 2.206.057 1.748 3.123 3.41 5.472 4.355 6.56.86 1.032 2.177 1.691 3.839 1.691.487 0 1.003-.086 1.318-.23v-.744c-1.031 0-2.063-.716-2.808-1.518-1.26-1.376-2.95-3.582-4.355-6.074 2.32-.545 4.04-2.722 4.04-4.9 0-3.208-2.492-4.698-5.758-4.698zm-.515 1.29c2.406 0 3.839 1.26 3.839 3.552 0 2.263-1.547 3.782-4.097 3.782-.974 0-1.404-.03-2.063-.086v-7.19c.66-.059 1.547-.059 2.32-.059z" /></svg></span><span>ResearchGate</span></a>
+<a class="contact-profile contact-huggingface" href="https://huggingface.co/eoguzakin" title="Hugging Face profile" aria-label="Hugging Face profile" target="_blank" rel="noopener noreferrer"><span class="contact-logo"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="brand-icon" aria-hidden="true" focusable="false"><path d="M12.025 1.13c-5.77 0-10.449 4.647-10.449 10.378 0 1.112.178 2.181.503 3.185.064-.222.203-.444.416-.577a.96.96 0 0 1 .524-.15c.293 0 .584.124.84.284.278.173.48.408.71.694.226.282.458.611.684.951v-.014c.017-.324.106-.622.264-.874s.403-.487.762-.543c.3-.047.596.06.787.203s.31.313.4.467c.15.257.212.468.233.542.01.026.653 1.552 1.657 2.54.616.605 1.01 1.223 1.082 1.912.055.537-.096 1.059-.38 1.572.637.121 1.294.187 1.967.187.657 0 1.298-.063 1.921-.178-.287-.517-.44-1.041-.384-1.581.07-.69.465-1.307 1.081-1.913 1.004-.987 1.647-2.513 1.657-2.539.021-.074.083-.285.233-.542.09-.154.208-.323.4-.467a1.08 1.08 0 0 1 .787-.203c.359.056.604.29.762.543s.247.55.265.874v.015c.225-.34.457-.67.683-.952.23-.286.432-.52.71-.694.257-.16.547-.284.84-.285a.97.97 0 0 1 .524.151c.228.143.373.388.43.625l.006.04a10.3 10.3 0 0 0 .534-3.273c0-5.731-4.678-10.378-10.449-10.378M8.327 6.583a1.5 1.5 0 0 1 .713.174 1.487 1.487 0 0 1 .617 2.013c-.183.343-.762-.214-1.102-.094-.38.134-.532.914-.917.71a1.487 1.487 0 0 1 .69-2.803m7.486 0a1.487 1.487 0 0 1 .689 2.803c-.385.204-.536-.576-.916-.71-.34-.12-.92.437-1.103.094a1.487 1.487 0 0 1 .617-2.013 1.5 1.5 0 0 1 .713-.174m-10.68 1.55a.96.96 0 1 1 0 1.921.96.96 0 0 1 0-1.92m13.838 0a.96.96 0 1 1 0 1.92.96.96 0 0 1 0-1.92M8.489 11.458c.588.01 1.965 1.157 3.572 1.164 1.607-.007 2.984-1.155 3.572-1.164.196-.003.305.12.305.454 0 .886-.424 2.328-1.563 3.202-.22-.756-1.396-1.366-1.63-1.32q-.011.001-.02.006l-.044.026-.01.008-.03.024q-.018.017-.035.036l-.032.04a1 1 0 0 0-.058.09l-.014.025q-.049.088-.11.19a1 1 0 0 1-.083.116 1.2 1.2 0 0 1-.173.18q-.035.029-.075.058a1.3 1.3 0 0 1-.251-.243 1 1 0 0 1-.076-.107c-.124-.193-.177-.363-.337-.444-.034-.016-.104-.008-.2.022q-.094.03-.216.087-.06.028-.125.063l-.13.074q-.067.04-.136.086a3 3 0 0 0-.135.096 3 3 0 0 0-.26.219 2 2 0 0 0-.12.121 2 2 0 0 0-.106.128l-.002.002a2 2 0 0 0-.09.132l-.001.001a1.2 1.2 0 0 0-.105.212q-.013.036-.024.073c-1.139-.875-1.563-2.317-1.563-3.203 0-.334.109-.457.305-.454m.836 10.354c.824-1.19.766-2.082-.365-3.194-1.13-1.112-1.789-2.738-1.789-2.738s-.246-.945-.806-.858-.97 1.499.202 2.362c1.173.864-.233 1.45-.685.64-.45-.812-1.683-2.896-2.322-3.295s-1.089-.175-.938.647 2.822 2.813 2.562 3.244-1.176-.506-1.176-.506-2.866-2.567-3.49-1.898.473 1.23 2.037 2.16c1.564.932 1.686 1.178 1.464 1.53s-3.675-2.511-4-1.297c-.323 1.214 3.524 1.567 3.287 2.405-.238.839-2.71-1.587-3.216-.642-.506.946 3.49 2.056 3.522 2.064 1.29.33 4.568 1.028 5.713-.624m5.349 0c-.824-1.19-.766-2.082.365-3.194 1.13-1.112 1.789-2.738 1.789-2.738s.246-.945.806-.858.97 1.499-.202 2.362c-1.173.864.233 1.45.685.64.451-.812 1.683-2.896 2.322-3.295s1.089-.175.938.647-2.822 2.813-2.562 3.244 1.176-.506 1.176-.506 2.866-2.567 3.49-1.898-.473 1.23-2.037 2.16c-1.564.932-1.686 1.178-1.464 1.53s3.675-2.511 4-1.297c.323 1.214-3.524 1.567-3.287 2.405.238.839 2.71-1.587 3.216-.642.506.946-3.49 2.056-3.522 2.064-1.29.33-4.568 1.028-5.713-.624" /></svg></span><span>Hugging Face</span></a>
+</div></div></footer>
+  <script type="module" id="visitor-counter-script">
+    const counterElement = document.getElementById('visitor-count');
+    const counterContainer = counterElement.closest('.visitor');
+
+    function readCount(snapshot) {
+      const count = snapshot.exists() ? snapshot.data().count : 0;
+      if (!Number.isSafeInteger(count) || count < 0) throw new Error('Invalid counter value');
+      return count;
+    }
+
+    async function loadVisitCount(db, { doc, getDoc, runTransaction }, preview) {
+      const counterRef = doc(db, 'counters', 'visitorCount');
+      // Local previews only read the existing total; they never add visits.
+      if (preview) return readCount(await getDoc(counterRef));
+      // Preserve the existing total and avoid lost increments during concurrent visits.
+      return runTransaction(db, async transaction => {
+        const count = readCount(await transaction.get(counterRef));
+        if (count >= Number.MAX_SAFE_INTEGER) throw new Error('Counter limit reached');
+        const nextCount = count + 1;
+        transaction.set(counterRef, { count: nextCount }, { merge: true });
+        return nextCount;
+      });
+    }
+
+    try {
+      const [{ initializeApp }, firestore] = await Promise.all([
+        import('https://www.gstatic.com/firebasejs/10.8.0/firebase-app.js'),
+        import('https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore.js')
+      ]);
+      const firebaseConfig = {
 			apiKey: "AIzaSyAM0LRwAKLISACx3QYS0du6tcjtrqlXbt8",
 			authDomain: "my-website-b0f3c.firebaseapp.com",
 			projectId: "my-website-b0f3c",
@@ -21,382 +310,16 @@
 			appId: "1:1057696900708:web:9610409c463bc39cdde171",
 			measurementId: "G-ZRT8YGQPWK"
 		};
-
-		// Initialize Firebase
-		try {
-			const app = initializeApp(firebaseConfig);
-			const db = getFirestore(app);
-
-			// Function to update counter
-			async function updateCounter() {
-				const counterElement = document.getElementById('visitor-count');
-				if (!counterElement) return;
-
-				try {
-					const counterRef = doc(db, 'counters', 'visitorCount');
-					const counterDoc = await getDoc(counterRef);
-
-					if (!counterDoc.exists()) {
-						await setDoc(counterRef, { count: 0 });
-						counterElement.textContent = '0';
-					} else {
-						const newCount = counterDoc.data().count + 1;
-						await updateDoc(counterRef, { count: newCount });
-						counterElement.textContent = newCount;
-					}
-				} catch (error) {
-					console.error('Error in counter update:', error);
-					counterElement.textContent = '?';
-					counterElement.title = 'Error: ' + error.message;
-				}
-			}
-
-			// Update counter as soon as possible
-			updateCounter();
-		} catch (error) {
-			console.error('Error initializing Firebase:', error);
-		}
-	</script>
-	<!-- Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
-	<script>
-		window.dataLayer = window.dataLayer || [];
-		function gtag() { dataLayer.push(arguments); }
-		gtag('js', new Date());
-		gtag('config', 'G-XXXXXXXXXX');
-	</script>
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<link rel="preconnect" href="https://fonts.gstatic.com">
-	<link
-		href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
-		rel="stylesheet">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-		integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
-		crossorigin="anonymous" referrerpolicy="no-referrer" />
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
-		integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w=="
-		crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
-
-<body>
-	<header>
-		<div class="navi">
-			<nav>
-				<h2 class="logo"><a href="#intro">Oğuz Akın</a></h2>
-				<ul>
-					<li><a href="#about"><i class="fas fa-user"></i> About Me</a></li>
-					<li><a href="#education"><i class="fas fa-graduation-cap"></i> Education</a></li>
-					<li><a href="#papers"><i class="fas fa-book"></i> Papers</a></li>
-					<li><a href="#skills"><i class="fa fa-code"></i> Skills</a></li>
-					<li><a href="#contact"><i class="fa fa-envelope"></i> Contact</a></li>
-				</ul>
-			</nav>
-		</div>
-	</header>
-	<div class="intro" id="intro">
-		<div class="content" data-aos="fade-left" data-aos-duration="700">
-			<h4>Hi, I'm</h4>
-			<h1>Oğuz Akın</h1>
-			<h3>
-				MSc Data Engineering and Analytics Student <a href="https://www.tum.de/en/"
-					target="_blank">@TUM</a><br />
-				BSc Computer Science Graduate <a href="https://www.uni-saarland.de/en/home.html"
-					target="_blank">@Saarland University</a><br />
-				Former Computer Engineering Student <a href="https://w3.bilkent.edu.tr/bilkent/"
-					target="_blank">@Bilkent University</a><br />
-				Working Student <a href="https://www.sap.com/germany/index.html" target="_blank">@SAP</a>
-			</h3>
-		</div>
-	</div>
-
-	<section class="about" id="about">
-		<div class="main">
-			<div class="image-container" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="200">
-				<img src="4.jpg">
-			</div>
-			<div class="about-text" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="200">
-				<h2>About Me</h2>
-				<h5>Programming Enthusiast</h5>
-				<p>
-					A proactive computer scientist who graduated from BSc Computer Science at Saarland University in
-					March 2026 and started the MSc Data Engineering and Analytics program at TUM. Currently working at
-					<a href="https://www.sap.com/germany/index.html" target="_blank"
-						style="text-decoration:none;color:var(--orange);">
-						<b>SAP</b>
-					</a> as a working student in Translation Project Coordination. Was previously in BSc Computer
-					Engineering at İhsan
-					Doğramacı Bilkent University.
-				</p>
-				<p>
-					Has strong academic achievement, was in the High Honour Roll and the Honour Roll back in İhsan
-					Doğramacı Bilkent University, and programming experience with a strong algorithm-programming
-					background. Possesses strong leadership and communication skills with fluency in English and
-					advanced German.
-				</p>
-				<p>
-					Keen to pursue a career in Computer Science as an AI specialist, a Data Scientist or a Machine
-					Learning specialist.
-				</p>
-			</div>
-		</div>
-	</section>
-
-	<div class="education" id="education">
-		<div class="title" data-aos="fade-out" data-aos-duration="1000">
-			<h2>Education</h2>
-		</div>
-
-		<div class="box">
-			<div class="card" data-aos="flip-right" data-aos-duration="700">
-				<img src="atakent.png" />
-				<h5>Karşıyaka Atakent Anatolian High School
-					<span>High School Diploma</span>
-					<span>Sep 2016 - Jun 2020</span>
-				</h5>
-				<div class="pra">
-					<p>Graduation Grade: 94,3898 out of 100</p>
-					<p>A-Level Subjects: Mathematics (A), Physics (A), Chemistry (A), Biology (A), English (A),
-						Secondary Foreign Language (German) (A)</p>
-				</div>
-			</div>
-
-			<div class="card" data-aos="flip-right" data-aos-duration="700">
-				<img src="bilkent.png" />
-				<h5>İhsan Doğramacı Bilkent University
-					<span>BSc Computer Engineering</span>
-					<span>Sep 2020 - Sep 2022</span>
-				</h5>
-				<div class="pra">
-					<p>Major GPA: 3.73</p>
-					<p>Important Subjects: Algorithms and Programming I (A), Algorithms and Programming II (A),
-						Fundamental Structures of Computer Science I (A), English and Composition II (A),
-						English and Composition I (-A), Introduction to Modern Biology (-A),
-						General Physics (+B), Calculus II (B), Digital Design (B)</p>
-				</div>
-			</div>
-
-			<div class="card" data-aos="flip-right" data-aos-duration="700">
-				<div class="img2"><img src="uni_uds_logo.jpg" /></div>
-				<h5>Saarland University
-					<span>BSc Computer Science</span>
-					<span>Oct 2022 - Mar 2026</span>
-				</h5>
-				<div class="pra">
-					<p>Important Subjects: Programming I, Mathematics for Computer Scientists I-II-III,
-						Perspectives in Computer Science, Programming II, System Architecture,
-						Introduction to Theoretical Computer Science, Fundamentals of Algorithms and Data Structures,
-						Big Data Engineering, Database Systems, Elements of Machine Learning, Concurrent Programming,
-						Data Networks, Cryptography, Machine Learning
-					</p>
-				</div>
-			</div>
-
-			<div class="card" data-aos="flip-right" data-aos-duration="700">
-				<img src="https://upload.wikimedia.org/wikipedia/commons/c/c8/Logo_of_the_Technical_University_of_Munich.svg"
-					alt="TUM logo" class="tum-logo" />
-				<h5>TUM
-					<span>MSc Data Engineering and Analytics</span>
-					<span>Mar 2026 - Present</span>
-				</h5>
-				<div class="pra">
-					<p>Currently pursuing a master's degree focused on modern data engineering systems, analytics
-						methods, and applied machine learning for large-scale, real-world data problems.</p>
-				</div>
-			</div>
-
-			<div class="card" data-aos="flip-right" data-aos-duration="700">
-				<i class="fa fa-trophy"></i>
-				<h5>Achievements</h5>
-				<div class="pra">
-					<ul>
-						<li>Certificate of Achievement in secondary school.</li>
-						<li>Honour Certificate in 10th and 11th grades.</li>
-						<li>Certificate of Outstanding Achievement in 11th and 12th grades.</li>
-						<li>Was in High Honour Roll for 2020-2021 Spring and 2021-2022 Fall semesters at İhsan Doğramacı
-							Bilkent University.</li>
-						<li>Was in Honour Roll for 2021-2022 Spring semester at İhsan Doğramacı Bilkent University.</li>
-						<li>Got an 8 overall band score in IELTS Academic Test, corresponding to C1 CEFR English level.
-						</li>
-						<li>Got a 1440 SAT score within 98th percentile.</li>
-						<li>Got B2 in TestDaf German Language Proficiency Test.</li>
-					</ul>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<section class="about" id="papers">
-		<div class="main">
-			<div class="about-text" data-aos="fade-up" data-aos-duration="1000">
-				<h2>Papers</h2>
-				<h5>Research & Thesis</h5>
-				<ul class="papers-list">
-					<li>
-						<a href="https://github.com/eoguzakin/Robustness-of-AI-Generated-Image-Detection-Against-Localized-Inpainting-Attacks"
-							target="_blank">
-							<span class="paper-title">Robustness of AI-Generated Image Detection Against Localized
-								Inpainting Attacks</span>
-						</a>
-						<p class="paper-description">BSc thesis project focusing on adversarial robustness of
-							AI-generated image detectors under localized inpainting attacks.</p>
-					</li>
-					<li>
-						<a href="https://www.researchgate.net/profile/Oguz-Akin-4" target="_blank">
-							<span class="paper-title">Augmented Reality and Future Impact</span>
-						</a>
-						<p class="paper-description">A research paper discussing long-term social and technological
-							impact areas of augmented reality systems.</p>
-					</li>
-					<li>
-						<a href="https://www.researchgate.net/profile/Oguz-Akin-4" target="_blank">
-							<span class="paper-title">Mass Tourism: Benefits and Detrimental Effects</span>
-						</a>
-						<p class="paper-description">An analytical paper evaluating economic gains and sustainability
-							risks of mass tourism.</p>
-					</li>
-					<li>
-						<a href="https://www.researchgate.net/profile/Oguz-Akin-4" target="_blank">
-							<span class="paper-title">Transhumanism and Everyday Computing</span>
-						</a>
-						<p class="paper-description">A conceptual paper exploring how software technologies can
-							integrate with human-centric daily life in the future.</p>
-					</li>
-				</ul>
-			</div>
-		</div>
-	</section>
-
-	<div class="skills" id="skills">
-		<div class="title" data-aos="fade-out" data-aos-duration="1000">
-			<h2>Skills</h2>
-		</div>
-		<div class="box">
-			<div class="col">
-				<ul>
-					<li data-aos="fade-up" data-aos-duration="700">
-						<b>Data & ML Engineering</b>
-						<p>Hands-on experience with <span class="highlight-code">Python</span>, <span
-								class="highlight-code">SQL</span>, and <span class="highlight-code">Machine
-								Learning</span> workflows for data preparation, model experimentation, and evaluation.
-							Familiar with end-to-end data pipelines from preprocessing to analysis-ready datasets.
-							Experienced in feature preparation, model comparison, metric-driven evaluation, and
-							communicating model behavior clearly for technical and non-technical audiences.</p>
-					</li>
-					<li data-aos="fade-up" data-aos-duration="700">
-						<b>Programming</b>
-						<p>Strong foundations in <span class="highlight-code">Python</span>, <span
-								class="highlight-code">Java</span>, <span class="highlight-code">C/C++</span>, <span
-								class="highlight-code">Kotlin</span>, and <span class="highlight-code">Rust</span>, with
-							emphasis on algorithms, software design, concurrent programming, and performance-aware
-							implementations. Comfortable with object-oriented design, modular architecture, debugging,
-							and transforming theoretical algorithmic knowledge into robust production-style code.</p>
-					</li>
-					<li data-aos="fade-up" data-aos-duration="700">
-						<b>Database & Big Data</b>
-						<p>Academic and practical exposure to <span class="highlight-concept">Database Systems</span>,
-							<span class="highlight-concept">Big Data Engineering</span>, and analytics-focused data
-							modeling for scalable problem-solving. Knowledge of query optimization principles,
-							relational schema design, and handling large datasets for high-quality analytical outcomes.
-						</p>
-					</li>
-					<li data-aos="fade-up" data-aos-duration="700">
-						<b>Data Visualization & Reporting</b>
-						<p>Ability to convert raw technical findings into clear narratives by combining quantitative
-							analysis, concise summaries, and insight-oriented reporting. Experienced in presenting
-							project and research outcomes in a structured, audience-friendly format.</p>
-					</li>
-				</ul>
-			</div>
-			<div class="col">
-				<ul>
-					<li data-aos="fade-up" data-aos-duration="700">
-						<b>Thesis-Oriented Skills</b>
-						<p>Applied <span class="highlight-concept">adversarial robustness analysis</span>, <span
-								class="highlight-concept">image forensics</span>, and <span
-								class="highlight-concept">experimental evaluation</span> to study AI-generated image
-							detection under localized inpainting attacks. Built an end-to-end thesis workflow including
-							literature review, attack scenario design, controlled experiments, and comparative
-							evaluation of detector behavior under manipulative image edits.</p>
-					</li>
-					<li data-aos="fade-up" data-aos-duration="700">
-						<b>Research Workflow</b>
-						<p>Experienced in literature review, reproducible experimentation, result interpretation, and
-							concise technical writing for academic reporting. Comfortable converting technical findings
-							into clear visual and written narratives. Strong attention to methodology clarity,
-							assumption tracking, and reproducibility of key results.</p>
-					</li>
-					<li data-aos="fade-up" data-aos-duration="700">
-						<b>Software Engineering</b>
-						<p>Strong background in version control, collaborative development, code review practices, and
-							structured project delivery through academic and team-based software projects. Experienced
-							with iterative development, task decomposition, and maintaining readable, maintainable
-							codebases under deadlines.</p>
-					</li>
-					<li data-aos="fade-up" data-aos-duration="700">
-						<b>Distributed & Concurrent Systems</b>
-						<p>Course and project experience in concurrent programming and systems-level thinking, including
-							designing safe and scalable logic for multi-user or parallel execution contexts.</p>
-					</li>
-				</ul>
-			</div>
-			<div class="col">
-				<ul>
-					<li data-aos="fade-up" data-aos-duration="700">
-						<b>Leadership & Teamwork</b>
-						<p>Led and contributed to multiple academic projects, coordinating team communication, work
-							distribution, and delivery timelines while maintaining code quality. Strong collaboration
-							habits across multidisciplinary teams with a focus on ownership and accountability.</p>
-					</li>
-					<li data-aos="fade-up" data-aos-duration="700">
-						<b>Communication</b>
-						<p>Clear communicator in technical and academic settings, able to explain complex topics,
-							present findings, and document decisions in a structured way for teammates, instructors, and
-							stakeholders.</p>
-					</li>
-					<li data-aos="fade-up" data-aos-duration="700">
-						<b>Languages</b>
-						<p><span class="highlight-language">Turkish</span> (Native)<br>
-							<span class="highlight-language">English</span>: Got 8 Overall Band Score (Reading: 9,
-							Listening: 8, Writing: 6.5, Speaking: 7.5) in IELTS Academic Test June 2022, corresponding
-							to C1 CEFR English level.<br>
-							<span class="highlight-language">German</span>: Got 3,3,4,3 from TestDaf, corresponding to
-							B2 CEFR German level.
-						</p>
-					</li>
-				</ul>
-			</div>
-		</div>
-	</div>
-
-	<footer id="contact">
-		<div class="footer-content" data-aos="fade-up" data-aos-duration="1000">
-			<p>Contact Me</p>
-			<p>I'm just an email away!</p>
-			<div class="social">
-				<a href="mailto:eoguzakin@hotmail.com"><i class="fa fa-envelope"></i></a>
-				<a href="https://www.linkedin.com/in/o%C4%9Fuz-ak%C4%B1n-18960722a/" target="_blank"><i
-						class="fab fa-linkedin"></i></a>
-				<a href="https://github.com/eoguzakin" target="_blank"><i class="fab fa-github"></i></a>
-				<a href="https://www.researchgate.net/profile/Oguz-Akin-4" target="_blank"><i
-						class="fab fa-researchgate"></i></a>
-			</div>
-			<p style="margin-top: 20px;">
-				<i class="fas fa-eye"></i> Visitors: <span id="visitor-count">...</span>
-			</p>
-		</div>
-	</footer>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
-		integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw=="
-		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-	<script>
-		// Initialize AOS with proper settings
-		AOS.init({
-			once: true,
-			duration: 1000,
-			offset: 100,
-			delay: 0
-		});
-	</script>
+      const db = firestore.getFirestore(initializeApp(firebaseConfig));
+      const preview = location.protocol === 'file:' || ['localhost', '127.0.0.1', '[::1]', ''].includes(location.hostname);
+      const count = await loadVisitCount(db, firestore, preview);
+      counterElement.textContent = new Intl.NumberFormat('en').format(count);
+      counterContainer.dataset.state = 'ready';
+    } catch (error) {
+      counterElement.textContent = 'Unavailable';
+      counterContainer.dataset.state = 'unavailable';
+      console.warn('Visitor counter unavailable:', error.code || error.message);
+    }
+  </script>
 </body>
-
 </html>
